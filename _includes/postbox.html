@@ -1,4 +1,3 @@
-<!-- begin post -->
 {% assign author_key = post.author | downcase %}
 {% assign author = site.data.authors[author_key] %}
 <div class="col-lg-4 col-md-6 mb-30px card-group">
@@ -6,7 +5,7 @@
         <div class="maxthumb">
             <a href="{{ site.baseurl }}{{ post.url }}">
                 {% if post.image %}
-                    <img class="img-fluid" loading="lazy" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}"> 
+                    <img class="img-fluid" loading="lazy" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ post.image }}{% endif %}" alt="{{ post.title }}"> 
                 {% endif %}
             </a>
         </div>
@@ -26,13 +25,13 @@
                 {% if post.author %}
                 <span class="meta-footer-thumb">
                 {% if author.avatar %}
-                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.name }}">
                 {% else %}
-                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}">
                 {% endif %}
                 </span>
                 <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
+                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.name }}</a></span><br/>
                 {% endif %}
                 <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>
@@ -42,4 +41,3 @@
         </div>
     </div>
 </div>
-<!-- end post -->

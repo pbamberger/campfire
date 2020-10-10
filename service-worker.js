@@ -36,60 +36,66 @@ const recentResourceToCache = [
     {% endfor %}
 ];
 
+const cacheTag = '{{ site.pwa.cacheName }}';
+const cacheVersion = parseInt('{{ site.pwa.cacheVersion }}'); 
+var cacheName = `${cacheTag}${cacheVersion}`;
+
 self.addEventListener(
     'install',
     (e) => {
         console.log('Service Worker, installed');
         e.waitUntil(
-            caches.open('base-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}')
+            caches.open(`base-${cacheName}`)
                 .then((cache) => {
                     console.log('Service Worker, base cached');
                     cache.addAll(baseToCache);
                 })
         );
         e.waitUntil(
-            caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}')
+            caches.open(cacheName)
                 .then((cache) => {
                     console.log('Service Worker, recent cached');
                     cache.addAll(recentPagesToCache);
                 })
         );
         e.waitUntil(
-            caches.open('resource-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}')
+            caches.open(`resource-${cacheName}`)
                 .then((cache) => {
                     console.log('Service Worker, recent resource cached');
                     cache.addAll(recentResourceToCache);
                 })
         );
-        for (var v = 1; v < {{ site.pwa.cacheVersion }}; v ++) {
-            const cacheName = `{{ site.pwa.cacheName }}${v}`;
+        for (var v = 1; v < cacheVersion; v ++) {
+            cacheName = `${cacheTag}${v}`;
             e.waitUntil(
-                caches.open(`base-${cacheName}`)
+                caches.has(`base-${cacheName}`)
                     .then(() => {
-                        caches.delete(`base-${cacheName}`).then(() => {
-                            console.log(`Service Worker, base-${cacheName} deleted`);
-                        })
+                        caches.delete(`base-${cacheName}`)
+                            .then(() => {
+                                console.log(`Service Worker, base-${cacheName} deleted`);
+                            })
                     })
             );
             e.waitUntil(
-                caches.open(cacheName)
+                caches.has(cacheName)
                     .then(() => {
-                        caches.delete(cacheName).then(() => {
-                            console.log(`Service Worker, ${cacheName} deleted`);
-                        })
+                        caches.delete(cacheName)
+                            .then(() => {
+                                console.log(`Service Worker, ${cacheName} deleted`);
+                            })
                     })
             );
             e.waitUntil(
-                caches.open(`resource-${cacheName}`)
+                caches.has(`resource-${cacheName}`)
                     .then(() => {
-                        caches.delete(`resource-${cacheName}`).then(() => {
-                            console.log(`Service Worker, resource-${cacheName} deleted`);
-                        })
+                        caches.delete(`resource-${cacheName}`)
+                            .then(() => {
+                                console.log(`Service Worker, resource-${cacheName} deleted`);
+                            })
                     })
             );
         }
-    }
-);
+    });
 
 
 self.addEventListener(
@@ -117,5 +123,4 @@ self.addEventListener(
                 })
 
         );
-    }
-);
+    });

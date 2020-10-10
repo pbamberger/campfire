@@ -14,26 +14,22 @@ post_class: post-template
         <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading">
                 {% comment %} Author Box {% endcomment %}
-                {% if page.author %}
+                {% if page.sauthor %}
                 <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.name }}">
                         {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}">
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a class="link-dark" href="{{ author.web }}" target="_blank">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-                        <span class="author-description">{{ author.description }}</span>
+                        <!-- <a class="link-dark" href="{{ author.web }}" target="_blank">{{ author.name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a> -->
+                        <span class="author-description">{{ author.name }}</span>
                     </div>
                 </div>
                 {% endif %}
-                <h1 class="posttitle">{{ page.title }}
-                    {% if page.cache != "always" %}
-                    <button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); addToResourceCache([ '{{ site.baseurl }}/{{ page.image }}' ]); this.hidden=true;" title="Save to my Cookbook"> </button>
-                    {% endif %}
-                </h1>
+                <h1 class="posttitle">{{ page.title }}{% if page.cache != "always" %}<button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); addToResourceCache([ '{{ site.baseurl }}/{{ page.image }}' ]); this.hidden=true;" title="Save to my Cookbook"></button>{% endif %}</h1>
             </div>
 
             {% comment %} Adsense if enabled from _config.yml (change your pub id and slot) {% endcomment %}
@@ -44,9 +40,17 @@ post_class: post-template
 
             {% comment %} Post Featured Image {% endcomment %}
             {% if page.image %}
-            <img class="featured-image img-fluid" loading="lazy" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            <img class="featured-image img-fluid" loading="lazy" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
             {% comment %} End Featured Image {% endcomment %}
+
+            {% if page.author %}
+            <div class="row post-top-meta">
+                <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                    <span class="author-description">{{ author.name }}</span>
+                </div>
+            </div>
+            {% endif %}
 
             {% comment %} Post Content {% endcomment %}
             <div class="article-post">
@@ -162,7 +166,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
   },
   "author": {
     "@type": "Person",
-    "name": "{{ author.display_name }}"
+    "name": "{{ author.name }}"
   },
   "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
   "reviewRating": {
