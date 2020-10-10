@@ -39,13 +39,13 @@ window.onload = function () {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js')
       .then(function (registration) {
-        console.log('Service Worker, registration successful');
+        console.log('Campfire service worker registration successful');
+        //updateCookbookCount();
       })
       .catch(function (error) {
-        console.log('Service worker, registration failed, error:', error);
+        console.log('Campfire service worker registration failed, error:', error);
       });
   }
-  updateCookbookCount();
 };
 
 /*!

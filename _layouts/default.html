@@ -40,15 +40,16 @@
         {% endcomment %}
 	</noscript>
 
-
 {% comment %} Begin Menu Navigation {% endcomment %}
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
     <div class="container pr-0">
 
-        {% comment %} Begin Logo {% endcomment %}
-        <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-        </a>
+        {% comment %} <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> Begin Logo {% endcomment %}
+        <div class="mainheading">
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                <h1 class="sitetitle">{{ site.name }}</h1>
+            </a>
+        </div>
         {% comment %} End Logo {% endcomment %}
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +60,7 @@
         <div class="collapse navbar-collapse" id="navbarMediumish">
         <ul class="navbar-nav ml-auto">
 
-            {% if page.url == "/categories#recipe" %}
+            {% if page.url == "/recipes" %}
             <li class="nav-item active">
             {% else %}
             <li class="nav-item">
@@ -67,7 +68,7 @@
                 <a class="nav-link" href="{{ site.baseurl }}/recipes">Recipes</a>
             </li>
 
-            {% if page.url == "/categories#planning" %}
+            {% if page.url == "/planning" %}
             <li class="nav-item active">
             {% else %}
             <li class="nav-item">
@@ -75,7 +76,7 @@
                 <a class="nav-link" href="{{ site.baseurl }}/planning">Planning</a>
             </li>
 
-            {% if page.url == "/categories#technique" %}
+            {% if page.url == "/techniques" %}
             <li class="nav-item active">
             {% else %}
             <li class="nav-item">
@@ -83,7 +84,11 @@
                 <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
             </li>
             
+            {% if page.url == "/cookbook" %}
+            <li class="nav-item active">
+            {% else %}
             <li class="nav-item">
+            {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter" class="badge badge-primary">1</span></sup></a>
             </li>
 
@@ -107,12 +112,12 @@
 
 <div class="container">
 
-<div class="mainheading">
+{% comment %}
+<!-- <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
-        {{ site.description }} 
-    </p>
-</div>
+    <h6>{{ site.description }}</h6>
+</div> -->
+{% endcomment %}
 
 <div class="main-content">
     {{ content }}
@@ -133,7 +138,7 @@
 </div>
 {% endif %}
     
-</div>
+</div> {% comment %} /.container {% endcomment %}
 
 {% comment %} Categories Jumbotron {% endcomment %}
 <div class="jumbotron fortags">
