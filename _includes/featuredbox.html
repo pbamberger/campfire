@@ -31,10 +31,11 @@
                             <div class="wrapfooter">
                                 {% if post.author %}
                                 <span class="meta-footer-thumb">
+                                <img class="author-thumb" src="{{site.baseurl}}/assets/images/avatars/{{ author_key }}.webp" alt="{{ author_key }}" />                
                                 {% if author.avatar %}
-                                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.name }}">
+                                <!-- <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.name }}"> -->
                                 {% else %}
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}">
+                                <!-- <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}"> -->
                                 {% endif %}
                                 </span>
                                 <span class="author-meta">

@@ -23,8 +23,9 @@
                 const body = await response.text();
                 const titleMatch = body.match(/<title>(.*)\|(.*?)<\/title>/);
                 const title = (titleMatch != null) ? titleMatch[1] : request.url;
-                const authorMatch = body.match(/<a class="link-dark" href=(.*?)>(.*?)<\/a>/);
-                const author = (authorMatch != null) ? authorMatch[2] : 'none';
+                //const authorMatch = body.match(/<a class="link-dark" href=(.*?)>(.*?)<\/a>/);
+                const authorMatch = body.match(/<span class="author-description">(.*?)<\/span>/);
+                const author = (authorMatch != null) ? authorMatch[1] : 'none';
                 const publishedMatch = body.match(/<span class="post-date">(.*)<\/span>/);
                 const published = (publishedMatch != null) ? publishedMatch[1] : '';
                 results.push({
@@ -43,8 +44,9 @@
                 .map(res => {
                     let html = `<li>
                         <a href="${res.url}">${res.title}</a> 
-                        <span><small> published by ${res.author} on ${res.published}, last visited ${res.visited.toISOString().substring(0, 10)}</small></span> 
-                        <button class="btn trash" onclick="removeFromCache('${res.url}'); renderCurrentKeys();" title="Remove this page from your cookbook"> </button>
+                        <button class="btn trash" onclick="removeFromCache('${res.url}'); renderCurrentKeys();" title="Remove this page from your cookbook"></button>
+                        <br/>
+                        <small> published by ${res.author} on ${res.published}, last visited ${res.visited.toISOString().substring(0, 10)}</small>
                         </li>`;
                     return html;
                 })

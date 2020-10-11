@@ -47,6 +47,7 @@ post_class: post-template
             {% if page.author %}
             <div class="row post-top-meta">
                 <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                    <img class="author-thumb" src="{{site.baseurl}}/assets/images/avatars/{{ author_key }}.webp" alt="{{ author_key }}" />
                     <span class="author-description">{{ author.name }}</span>
                 </div>
             </div>

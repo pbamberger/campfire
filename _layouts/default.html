@@ -84,14 +84,6 @@
                 <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
             </li>
             
-            {% if page.url == "/cookbook" %}
-            <li class="nav-item active">
-            {% else %}
-            <li class="nav-item">
-            {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter" class="badge badge-primary">1</span></sup></a>
-            </li>
-
             <li>
                 <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
                     <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search..."/>
@@ -99,6 +91,14 @@
                 <div id="lunrsearchresults">
                     <ul></ul>
                 </div>
+            </li>
+
+            {% if page.url == "/cookbook" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter" class="badge badge-primary">1</span></sup></a>
             </li>
 
         </ul>
@@ -185,16 +185,28 @@
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
                 Copyright © 1908 - {{ site.time | date: "%Y" }} Scouts New Zealand.
             </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">
+            <div class="col-md-6 col-sm-6 text-center text-lg-right navbar navbar-expand-lg navbar-light bg-white">
                 <ul class="navbar-nav ml-auto">
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/authors">Authors</a>
                     </li>
-                    <li>
-                        <a target="_blank" class="nav-link" href="https://github.com/Kaukapakapa-Scout-Group/campfire"><i class="fab fa-github"></i> Fork {{ site.name }} on Github</a>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/maps">Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/status">Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/tags">Tags</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/Kaukapakapa-Scout-Group/campfire"><i class="fab fa-github"></i> Fork {{ site.name }} on Github</a>        
                     </li>
                 </ul>
             </div>

@@ -40,7 +40,7 @@ window.onload = function () {
     navigator.serviceWorker.register('/service-worker.js')
       .then(function (registration) {
         console.log('Campfire service worker registration successful');
-        //updateCookbookCount();
+        updateCookbookCount();
       })
       .catch(function (error) {
         console.log('Campfire service worker registration failed, error:', error);
