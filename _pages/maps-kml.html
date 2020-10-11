@@ -1,0 +1,28 @@
+---
+layout: 
+title: Maps KML generator
+permalink: /maps-kml
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<name>Campfire.kml</name>>
+{% for author in site.data.authors %}
+<Placemark>
+<name>{{ author[1].name }}</name>
+{% assign posts = site.posts | where: "author", author[0] %}{% if posts.size > 0 %}<description>
+<![CDATA[
+{% for post in posts %}
+{{ post.title }}
+{{ site.liveurl }}{{ site.baseurl }}{{ post.url }}
+{% endfor %}
+]]>
+</description>{% endif %}
+{% if author[1].lng %}<Point>
+<coordinates>{{ author[1].lng }},{{ author[1].lat }},0</coordinates>
+</Point>{% endif %}
+</Placemark>
+{% endfor %}
+</Document>
+</kml>

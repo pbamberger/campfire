@@ -1,47 +1,11 @@
-scoutnewzealandhq:
-  id: 1
-  name: Scout New Zealand HQ
-  address1: 
+1stalexandrascoutgroup:
+  id: 11924
+  name: 1st Alexandra Scout Group
+  address1: Molyneux Park
   address2: 
-  city: Wellington
-  lat: 
-  lng: 
-
-uppernorthislandoffice:
-  id: 2
-  name: Upper North Island Office
-  address1: 
-  address2: 
-  city: Auckland
-  lat: 
-  lng: 
-
-lowernorthislandoffice:
-  id: 4
-  name: Lower North Island Office
-  address1: 
-  address2: 
-  city: Wellington
-  lat: 
-  lng: 
-
-southislandoffice:
-  id: 5
-  name: South Island Office
-  address1: 
-  address2: 
-  city: Christchurch
-  lat: 
-  lng: 
-
-scoutsdirect:
-  id: 6
-  name: Scouts Direct
-  address1: 
-  address2: 
-  city: Wellington
-  lat: 
-  lng: 
+  city: Alexandra
+  lat: -45.242094
+  lng: 169.381409
 
 1stcartertonscoutgroup:
   id: 11925
@@ -70,10 +34,19 @@ scoutsdirect:
   lat: -36.822079
   lng: 174.800905
 
+1stgorescoutgroup:
+  id: 11928
+  name: 1st Gore Scout Group
+  address1: 15B Eccles Street
+  address2: 
+  city: Gore
+  lat: -46.103685
+  lng: 168.938432
+
 1stislandbayscoutgroup:
   id: 11929
   name: 1st Island Bay Scout Group
-  address1: 9/11 Dover Street
+  address1: 9- 11 Dover Street
   address2: 
   city: Wellington
   lat: -41.328372
@@ -106,6 +79,15 @@ scoutsdirect:
   lat: -40.071483
   lng: 175.374119
 
+1stmatapunascoutgroup:
+  id: 11935
+  name: 1st Matapuna Scout Group
+  address1: O'Reilly Crescent
+  address2: 
+  city: Taumaranui
+  lat: -38.88169
+  lng: 175.296414
+
 1stmikotahiseascoutgroup:
   id: 11936
   name: 1st Mikotahi Sea Scout Group
@@ -124,6 +106,15 @@ scoutsdirect:
   lat: -36.894912
   lng: 174.70331
 
+1stngongotahascoutgroup:
+  id: 11938
+  name: 1st Ngongotaha Scout Group
+  address1: 1 Western Road
+  address2: 
+  city: Rotorua
+  lat: -38.081723
+  lng: 176.2119
+
 1storakeiseascouts:
   id: 11939
   name: 1st Orakei Sea Scouts
@@ -132,6 +123,15 @@ scoutsdirect:
   city: Auckland
   lat: -36.864637
   lng: 174.809747
+
+1sttauposcoutgroup:
+  id: 11942
+  name: 1st Taupo Scout Group
+  address1: 32 Wheretia Street
+  address2: 
+  city: Taupo
+  lat: -38.687055
+  lng: 176.082368
 
 1sttitahibayscoutgroup:
   id: 11943
@@ -250,6 +250,24 @@ aoteaseascouts:
   lat: -36.926506
   lng: 174.777256
 
+aratakiomanuscoutgroup:
+  id: 11957
+  name: Arataki Omanu Scout Group
+  address1: Moa Park
+  address2: 
+  city: Tauranga
+  lat: -37.65674
+  lng: 176.209179
+
+arrowtownscoutgroup:
+  id: 11923
+  name: Arrowtown Scout Group
+  address1: Centennial Avenue
+  address2: 
+  city: Arrowtown
+  lat: -44.942512
+  lng: 168.837336
+
 ashburtonscoutgroup:
   id: 11958
   name: Ashburton Scout Group
@@ -268,6 +286,15 @@ ashhurstscoutgroup:
   lat: -40.28823
   lng: 175.762275
 
+aurorarovercrew:
+  id: 11961
+  name: Aurora Rover Crew
+  address1: 31 Matai Street
+  address2: 
+  city: Invercargill
+  lat: -46.388666
+  lng: 168.376765
+
 avoncossgroverovercrew:
   id: 11962
   name: Avon Cossgrove Rover Crew
@@ -277,14 +304,23 @@ avoncossgroverovercrew:
   lat: -43.574394
   lng: 172.72124
 
-avonhead/russleyscoutgroup:
+avonhead-russleyscoutgroup:
   id: 11960
-  name: Avonhead/Russley Scout Group
+  name: Avonhead - Russley Scout Group
   address1: 49 Staveley Street
   address2: 
   city: Christchurch
   lat: -43.520091
   lng: 172.556142
+
+awakeriscoutgroup:
+  id: 11963
+  name: Awakeri Scout Group
+  address1: 6 White Pine Bush Road
+  address2: 
+  city: Whakatane
+  lat: -37.997675
+  lng: 176.896819
 
 awatunaseascouts:
   id: 11964
@@ -303,6 +339,24 @@ badenpowellscoutgroup:
   city: Whanganui
   lat: -39.945063
   lng: 175.024528
+
+balcluthascoutgroup:
+  id: 11920
+  name: Balclutha Scout Group
+  address1: 3 Glasgow Street
+  address2: 
+  city: Balclutha
+  lat: -46.237559
+  lng: 169.744647
+
+balfourscoutgroup:
+  id: 11933
+  name: Balfour Scout Group
+  address1: 18 Kruger Street
+  address2: 
+  city: Balfour
+  lat: -45.839754
+  lng: 168.588741
 
 balmoralscoutgroup:
   id: 11934
@@ -349,9 +403,9 @@ birkenheadseascoutgroup:
   lat: -36.815638
   lng: 174.741369
 
-bishopdale/harewoodscoutgroup:
+bishopdale-harewoodscoutgroup:
   id: 11969
-  name: Bishopdale/Harewood Scout Group
+  name: Bishopdale - Harewood Scout Group
   address1: 18 Raleigh Street
   address2: 
   city: Christchurch
@@ -375,6 +429,15 @@ bountysearovers:
   city: Wellington
   lat: -41.30685
   lng: 174.799328
+
+brightonseascouts:
+  id: 11971
+  name: Brighton Sea Scouts
+  address1: 8 Taylor Street
+  address2: 
+  city: Dunedin
+  lat: -45.949318
+  lng: 170.327647
 
 brightwaterscoutgroup:
   id: 11972
@@ -493,6 +556,15 @@ churchwardparkscoutgroup:
   lat: -41.53465
   lng: 173.941142
 
+citychurchscoutgroup:
+  id: 11984
+  name: City Church Scout Group
+  address1: 252 Otumoetai Road
+  address2: 
+  city: Tauranga
+  lat: -37.681537
+  lng: 176.136038
+
 clevedonscoutgroup:
   id: 11985
   name: Clevedon Scout Group
@@ -528,6 +600,15 @@ columbascoutgroup:
   city: Oamaru
   lat: -45.102971
   lng: 170.952737
+
+cromwellscoutgroup:
+  id: 11991
+  name: Cromwell Scout Group
+  address1: 31 Ortive Street
+  address2: 
+  city: Cromwell
+  lat: -45.04342
+  lng: 169.209473
 
 darfieldscoutgroup:
   id: 11993
@@ -592,6 +673,15 @@ druryscoutgroup:
   lat: -37.103221
   lng: 174.951059
 
+dunstanrovercrew:
+  id: 11891
+  name: Dunstan Rover Crew
+  address1: Alexandra Scout Den
+  address2: 
+  city: Alexandra
+  lat: -45.242438
+  lng: 169.381487
+
 eastbournescoutgroup:
   id: 11997
   name: Eastbourne Scout Group
@@ -618,6 +708,15 @@ eastmanrovercrew:
   city: Palmerston North
   lat: -40.333178
   lng: 175.632771
+
+edendalescoutgroup:
+  id: 12000
+  name: Edendale Scout Group
+  address1: 43 Seaward Downs Road
+  address2: 
+  city: Edendale
+  lat: -46.325076
+  lng: 168.78026
 
 edmontonscoutgroup:
   id: 12001
@@ -700,6 +799,15 @@ franzjosefglacierscoutgroup:
   lat: -43.390005
   lng: 170.182713
 
+georgetownscoutgroup:
+  id: 12005
+  name: Georgetown Scout Group
+  address1: 9 Saturn Street
+  address2: 
+  city: Invercargill
+  lat: -46.427629
+  lng: 168.371998
+
 geraldinescoutgroup:
   id: 12008
   name: Geraldine Scout Group
@@ -708,6 +816,15 @@ geraldinescoutgroup:
   city: Geraldine
   lat: -44.098677
   lng: 171.243844
+
+gladstonescoutgroup:
+  id: 12009
+  name: Gladstone Scout Group
+  address1: 100 Russel Street
+  address2: 
+  city: Invercargill
+  lat: -46.390258
+  lng: 168.350307
 
 glenedenscoutgroup:
   id: 12010
@@ -754,14 +871,23 @@ gordonscoutgroup:
   lat: -43.505742
   lng: 172.564185
 
-greendale/tamateascoutgroup:
+greendale-tamateascoutgroup:
   id: 12015
-  name: Greendale/Tamatea Scout Group
+  name: Greendale - Tamatea Scout Group
   address1: 141 York Avenue
   address2: 
   city: Napier
   lat: -39.523146
   lng: 176.862148
+
+greertonscoutgroup:
+  id: 12016
+  name: Greerton Scout Group
+  address1: 12 Hynds Road
+  address2: 
+  city: Tauranga
+  lat: -37.726217
+  lng: 176.129744
 
 greyvalleyscoutgroup:
   id: 12017
@@ -925,6 +1051,15 @@ irondukeseascouts:
   lat: -41.258501
   lng: 173.283195
 
+jellicoeseascouts:
+  id: 12036
+  name: Jellicoe Sea Scouts
+  address1: 1 Stead Street
+  address2: 
+  city: Invercargill
+  lat: -46.423591
+  lng: 168.324733
+
 johnsonvillescoutgroup:
   id: 12037
   name: Johnsonville Scout Group
@@ -988,6 +1123,15 @@ kawekarovercrew:
   lat: -39.520862
   lng: 176.871718
 
+kawerauscoutgroup:
+  id: 12044
+  name: Kawerau Scout Group
+  address1: 12 Waterhouse Street
+  address2: 
+  city: Kawerau
+  lat: -38.094988
+  lng: 176.706635
+
 kererumasseyscoutgroup:
   id: 12045
   name: Kereru Massey Scout Group
@@ -1023,6 +1167,15 @@ khandallahscoutgroup:
   city: Wellington
   lat: -41.241946
   lng: 174.79361
+
+kingsleyscoutgroup:
+  id: 12047
+  name: Kingsley Scout Group
+  address1: 6 Rimu Place
+  address2: 
+  city: Whakatane
+  lat: -37.960248
+  lng: 176.961395
 
 kirikiriroascoutgroup:
   id: 12157
@@ -1060,6 +1213,24 @@ lincolnscoutgroup:
   lat: -43.638304
   lng: 172.48179
 
+lowernorthislandoffice:
+  id: 4
+  name: Lower North Island Office
+  address1: 1 Kaiwharawhara Road
+  address2: 
+  city: Wellington
+  lat: -41.26
+  lng: 174.7893
+
+lynmorescoutgroup:
+  id: 12057
+  name: Lynmore Scout Group
+  address1: 55 Lewis Road
+  address2: 
+  city: Rotorua
+  lat: -38.151991
+  lng: 176.288386
+
 lytteltonseascoutgroup:
   id: 12058
   name: Lyttelton Sea Scout Group
@@ -1095,6 +1266,15 @@ malvernscoutgroup:
   city: Christchurch
   lat: -43.505182
   lng: 172.629166
+
+mangapapascoutgroup:
+  id: 12061
+  name: Mangapapa Scout Group
+  address1: 7 Bryce Street
+  address2: 
+  city: Gisborne
+  lat: -38.644856
+  lng: 178.00965
 
 mangerebridgescoutgroup:
   id: 12062
@@ -1141,9 +1321,27 @@ marshlandscoutgroup:
   lat: -43.474034
   lng: 172.666789
 
-maungaraki/richmondscoutgroup:
+mataurascoutgroup:
+  id: 12064
+  name: Mataura Scout Group
+  address1: 20 River Road
+  address2: 
+  city: Mataura
+  lat: -46.197645
+  lng: 168.862719
+
+matuascoutgroup:
+  id: 12067
+  name: Matua Scout Group
+  address1: 90 Tilby Drive
+  address2: 
+  city: Matua
+  lat: -37.661225
+  lng: 176.126236
+
+maungaraki-richmondscoutgroup:
   id: 12068
-  name: Maungaraki/Richmond Scout Group
+  name: Maungaraki - Richmond Scout Group
   address1: 10 Barberry Grove
   address2: 
   city: Lower Hutt
@@ -1240,27 +1438,27 @@ morrinsvillescoutgroup:
   lat: -37.655909
   lng: 175.527205
 
-motumoana/greenbayscoutgroup:
+mosgielscoutgroup:
+  id: 12080
+  name: Mosgiel Scout Group
+  address1: 33 Reid Avenue
+  address2: 
+  city: Mosgiel
+  lat: -45.870376
+  lng: 170.349703
+
+motumoana-greenbayscoutgroup:
   id: 12103
-  name: Motu Moana / Green Bay Scout Group
+  name: Motu Moana - Green Bay Scout Group
   address1: 90 Connaught Street
   address2: 
   city: Auckland
-  lat: -36.930116
-  lng: 174.692409
+  lat: -36.93
+  lng: 174.6903
 
-motumoana/greenbayscoutgroup:
-  id: 12081
-  name: Motu Moana/Green Bay Scout Group
-  address1: 90 Connaught Street
-  address2: 
-  city: Auckland
-  lat: -36.930116
-  lng: 174.692409
-
-motutara/waimaukuscoutgroup:
+motutara-waimaukuscoutgroup:
   id: 12082
-  name: Motutara/Waimauku Scout Group
+  name: Motutara - Waimauku Scout Group
   address1: 62 Muriwai Road
   address2: 
   city: Auckland
@@ -1357,9 +1555,9 @@ ohaupogroup:
   lat: -37.916061
   lng: 175.303536
 
-onetreehill/ellersliescoutgroup:
+onetreehill-ellersliescoutgroup:
   id: 12095
-  name: One Tree Hill/Ellerslie Scout Group
+  name: One Tree Hill - Ellerslie Scout Group
   address1: 22 Massey Avenue
   address2: 
   city: Auckland
@@ -1492,6 +1690,15 @@ papakuraseascoutgroup:
   lat: -37.059829
   lng: 174.93063
 
+papamoascoutgroup:
+  id: 12113
+  name: Papamoa Scout Group
+  address1: 569 Papamoa Beach Road
+  address2: 
+  city: Papamoa
+  lat: -37.696812
+  lng: 176.28673
+
 paparangiscoutgroup:
   id: 12114
   name: Paparangi Scout Group
@@ -1599,6 +1806,24 @@ puketapuscoutgroup:
   city: Otago
   lat: -45.484136
   lng: 170.711427
+
+putaruruscoutgroup:
+  id: 12122
+  name: Putaruru Scout Group
+  address1: 8 Park Avenue
+  address2: 
+  city: Putaruru
+  lat: -38.048988
+  lng: 175.780468
+
+queenstownscoutgroup:
+  id: 12126
+  name: Queenstown Scout Group
+  address1: Sugar Lane
+  address2: 
+  city: Queenstown
+  lat: -45.018942
+  lng: 168.714656
 
 rakaiascoutgroup:
   id: 12127
@@ -1735,6 +1960,15 @@ roslynscoutgroup-palmerstonnorth:
   lat: -40.341384
   lng: 175.631884
 
+rotoruacentralscoutgroup:
+  id: 12143
+  name: Rotorua Central Scout Group
+  address1: 35 Pererika Street
+  address2: 
+  city: Rotorua
+  lat: -38.140485
+  lng: 176.243188
+
 rowallanscoutgroup:
   id: 11918
   name: Rowallan Scout Group
@@ -1762,6 +1996,15 @@ ruakakascoutgroup:
   lat: -35.881509
   lng: 174.452656
 
+saddleviewscoutgroup:
+  id: 12011
+  name: Saddle View Scout Group
+  address1: 31 Abbotsford Road
+  address2: 
+  city: Dunedin
+  lat: -45.899892
+  lng: 170.424436
+
 scottsownseascouts:
   id: 12145
   name: Scotts Own Sea Scouts
@@ -1770,6 +2013,15 @@ scottsownseascouts:
   city: Oamaru
   lat: -45.109056
   lng: 170.974251
+
+scoutnewzealandhq:
+  id: 1
+  name: Scout New Zealand HQ
+  address1: 1 Kaiwharawhara Road
+  address2: 
+  city: Wellington
+  lat: -41.2600742
+  lng: 174.7893409
 
 shackletonseascouts:
   id: 12147
@@ -1816,6 +2068,15 @@ springlandsseascoutgroup:
   lat: -41.510377
   lng: 173.934829
 
+standrewsscoutgroup:
+  id: 12153
+  name: St Andrews Scout Group
+  address1: 191 Main Street
+  address2: 
+  city: Otautau
+  lat: -46.141261
+  lng: 167.99563
+
 staugustinesscoutgroup:
   id: 12155
   name: St Augustines Scout Group
@@ -1834,18 +2095,18 @@ stchadsscoutgroup:
   lat: -36.871139
   lng: 174.835998
 
-stgeorge/epsomscoutgroup:
+stgeorge-epsomscoutgroup:
   id: 12154
-  name: St George/Epsom Scout Group
+  name: St George - Epsom Scout Group
   address1: 13 Griffin Avenue
   address2: 
   city: Auckland
   lat: -36.88707
   lng: 174.776801
 
-stheliers/glendowiescoutgroup:
+stheliers-glendowiescoutgroup:
   id: 12160
-  name: St Heliers/Glendowie Scout Group
+  name: St Heliers -Glendowie Scout Group
   address1: 18 Kinsale Avenue
   address2: 
   city: Auckland
@@ -1897,15 +2158,6 @@ stmartinsscoutgroup:
   lat: -43.562654
   lng: 172.66259
 
-stmary'sscoutgroup-levin:
-  id: 12165
-  name: St Mary's Scout Group - Levin
-  address1: St Mary's Church Hall
-  address2: 
-  city: Levin
-  lat: -40.621652
-  lng: 175.289584
-
 stmarysscoutgroup-hamilton:
   id: 12166
   name: St Marys Scout Group - Hamilton
@@ -1914,6 +2166,15 @@ stmarysscoutgroup-hamilton:
   city: Hamilton
   lat: -37.790257
   lng: 175.293111
+
+stmary'sscoutgroup-levin:
+  id: 12165
+  name: St Mary's Scout Group - Levin
+  address1: St Mary's Church Hall
+  address2: 
+  city: Levin
+  lat: -40.621652
+  lng: 175.289584
 
 stmatthew'sscoutgroup:
   id: 12167
@@ -2005,6 +2266,15 @@ taiaoteaairscoutgroup:
   lat: -36.720435
   lng: 174.742206
 
+tainuiseascoutgroup:
+  id: 12181
+  name: Tainui Sea Scout Group
+  address1: 2 Score Road
+  address2: 
+  city: Gisborne
+  lat: -38.6613
+  lng: 178.034003
+
 takapauscoutgroup:
   id: 12180
   name: Takapau Scout Group
@@ -2022,6 +2292,15 @@ takapunagroup:
   city: Auckland
   lat: -36.788571
   lng: 174.760504
+
+takitimuscoutgroup:
+  id: 12182
+  name: Takitimu Scout Group
+  address1: 25 High Street West
+  address2: 
+  city: Nightcaps
+  lat: -45.973854
+  lng: 168.031092
 
 tamahaseascoutgroup:
   id: 11904
@@ -2050,6 +2329,24 @@ tawascoutgroup:
   lat: -41.171606
   lng: 174.826335
 
+teanauseascoutgroup:
+  id: 12184
+  name: Te Anau Sea Scout Group
+  address1: 154 Manapouri - Te Anau Highway
+  address2: 
+  city: Te Anau
+  lat: -45.431377
+  lng: 167.71374
+
+tearaokiwaseascouts:
+  id: 12186
+  name: Te Ara O Kiwa Sea Scouts
+  address1: 7 Rons Place
+  address2: 
+  city: Bluff
+  lat: -46.596672
+  lng: 168.333164
+
 tearohascoutgroup:
   id: 11915
   name: Te Aroha Scout Group
@@ -2077,6 +2374,15 @@ teawahouscoutgroup:
   lat: -40.473085
   lng: 175.284405
 
+teawamutuscoutgroup:
+  id: 12189
+  name: Te Awamutu Scout Group
+  address1: 10 Scout Lane
+  address2: 
+  city: Te Awamutu
+  lat: -38.008559
+  lng: 175.329051
+
 teaweawescoutgroup:
   id: 12190
   name: Te Awe Awe Scout Group
@@ -2094,6 +2400,24 @@ tekauwhatascoutgroup:
   city: Te Kauwhata
   lat: -37.405524
   lng: 175.148107
+
+tekuitiscoutgroup:
+  id: 11898
+  name: Te Kuiti Scout Group
+  address1: 53 Esplanade
+  address2: 
+  city: Te Kuiti
+  lat: -38.330267
+  lng: 175.165644
+
+tepukescoutgroup:
+  id: 12191
+  name: Te Puke Scout Group
+  address1: 7 Stock Road
+  address2: 
+  city: Te Puke
+  lat: -37.782667
+  lng: 176.330527
 
 tepuruseascoutgroup:
   id: 12192
@@ -2122,6 +2446,15 @@ tinwaldscoutgroup:
   lat: -43.918459
   lng: 171.718089
 
+toitoisscoutgroup:
+  id: 12198
+  name: Toi Tois Scout Group
+  address1: 86 Niagara - Tokanui Highway
+  address2: 
+  city: Tokanui
+  lat: -46.562447
+  lng: 168.952923
+
 tokomaruscoutgroup:
   id: 12199
   name: Tokomaru Scout Group
@@ -2149,6 +2482,15 @@ tuakaudistrictsseascoutgroup:
   lat: -37.283065
   lng: 174.938619
 
+tuataperescoutgroup:
+  id: 11914
+  name: Tuatapere Scout Group
+  address1: Erskine Street
+  address2: 
+  city: Tuatapere
+  lat: -46.128176
+  lng: 167.680194
+
 turuascoutgroup:
   id: 12202
   name: Turua Scout Group
@@ -2157,6 +2499,15 @@ turuascoutgroup:
   city: Turua
   lat: -37.239078
   lng: 175.563051
+
+uppernorthislandoffice:
+  id: 2
+  name: Upper North Island Office
+  address1: 90 Connaught Street
+  address2: 
+  city: Auckland
+  lat: -36.9302
+  lng: 174.69
 
 valleyroverscoutcrew:
   id: 12203
@@ -2185,6 +2536,15 @@ wadestownscoutgroup:
   lat: -41.259046
   lng: 174.772313
 
+waianiwascoutgroup:
+  id: 12206
+  name: Waianiwa Scout Group
+  address1: 268 Argyle - Otahuti Road
+  address2: 
+  city: Invercargill
+  lat: -46.294426
+  lng: 168.251265
+
 waiaupascoutgroup:
   id: 12207
   name: Waiau Pa Scout Group
@@ -2193,6 +2553,15 @@ waiaupascoutgroup:
   city: Auckland
   lat: -37.13537
   lng: 174.750459
+
+waikakascoutgroup:
+  id: 12208
+  name: Waikaka Scout Group
+  address1: 12 Main Street
+  address2: 
+  city: Waikaka
+  lat: -45.921613
+  lng: 169.0152
 
 waikanaescoutgroup:
   id: 12209
@@ -2256,6 +2625,15 @@ wainuiseascoutgroup:
   city: Auckland
   lat: -36.903683
   lng: 174.862641
+
+waiotapuscoutgroup:
+  id: 12215
+  name: Waiotapu Scout Group
+  address1: 812 Corbett Road
+  address2: 
+  city: Ngakuru
+  lat: -38.322844
+  lng: 176.289247
 
 waipukurauscoutgroup:
   id: 12216
@@ -2329,6 +2707,15 @@ warkworthscoutgroup:
   lat: -36.399036
   lng: 174.660201
 
+waverleyscoutgroup:
+  id: 12224
+  name: Waverley Scout Group
+  address1: 12 Pine Crescent
+  address2: 
+  city: Invercargill
+  lat: -46.389005
+  lng: 168.378029
+
 westendscoutgroup:
   id: 12225
   name: West End Scout Group
@@ -2346,6 +2733,15 @@ westmeltonscoutgroup:
   city: West Melton
   lat: -43.526396
   lng: 172.369484
+
+westernbayofplentyrovercrew:
+  id: 12227
+  name: Western Bay of Plenty Rover Crew
+  address1: 140 Grange Rd
+  address2: 
+  city: Taurnanga
+  lat: -37.677601
+  lng: 176.146674
 
 westernbaysseascoutgroup:
   id: 12228
@@ -2437,3 +2833,20 @@ whitiangaseascouts:
   lat: -36.838205
   lng: 175.703541
 
+wintonscoutgroup:
+  id: 11895
+  name: Winton Scout Group
+  address1: Winton Racecourse
+  address2: 
+  city: Winton
+  lat: -46.117132
+  lng: 168.314058
+
+woodlandsscoutgroup:
+  id: 12235
+  name: Woodlands Scout Group
+  address1: 17 Wyeth Road
+  address2: 
+  city: Woodlands
+  lat: -46.354565
+  lng: 168.548563
