@@ -59,7 +59,6 @@
         {% comment %} Begin Menu {% endcomment %}
         <div class="collapse navbar-collapse" id="navbarMediumish">
         <ul class="navbar-nav ml-auto">
-
             {% if page.url == "/recipes" %}
             <li class="nav-item active">
             {% else %}
@@ -84,15 +83,6 @@
                 <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
             </li>
             
-            <li>
-                <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-                    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search..."/>
-                </form>
-                <div id="lunrsearchresults">
-                    <ul></ul>
-                </div>
-            </li>
-
             {% if page.url == "/cookbook" %}
             <li class="nav-item active">
             {% else %}
@@ -101,6 +91,14 @@
                 <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter" class="badge badge-primary">1</span></sup></a>
             </li>
 
+            <li>
+                <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+                    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" xplaceholder="Search..."/>
+                </form>
+                <div id="lunrsearchresults">
+                    <ul></ul>
+                </div>
+            </li>
         </ul>
         </div>
         {% comment %} End Menu {% endcomment %}
@@ -111,13 +109,6 @@
 <div class="site-content">
 
 <div class="container">
-
-{% comment %}
-<!-- <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <h6>{{ site.description }}</h6>
-</div> -->
-{% endcomment %}
 
 <div class="main-content">
     {{ content }}
