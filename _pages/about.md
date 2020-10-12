@@ -26,3 +26,9 @@ To view your cookbook use the [cookbook page](/cookbook)
 Please use the Docs page to follow the procedure to submit your own successful recipes
 
 A big thanks to all the Scout groups that have submitted these excellent recipes
+
+
+#### RSS Feed
+
+The [link for your RSS reader](/feed.xml)
+[![RSS Feed](/assets/images/rssfeed.webp)](/feed.xml)
