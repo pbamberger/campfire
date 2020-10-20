@@ -138,7 +138,7 @@ printf("Hello World");
 
 
 
-![walking]({{ site.baseurl }}/assets/images/avatars/avatar.webp)
+![walking]({{ site.baseurl }}/assets/images/avatar.webp)
 
 ## Reference lists
 

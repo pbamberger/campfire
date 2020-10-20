@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.webp'
 google_analytics: 'UA-16040666-10'
 include: ["_pages"]
 logo: 'assets/images/logo.webp'
-#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
+#mailchimp-list: 'https://xxxx.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
 permalink: /:title/
 
 pwa:
@@ -33,7 +33,7 @@ jekyll-archives:
     year: '/year/:year/'
     
 # Pagination 
-paginate: 6
+paginate: 12
 paginate_path: /page:num/
     
 # Other
