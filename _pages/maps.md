@@ -5,8 +5,8 @@ permalink: /maps
 ---
 
 <div id="map" style="width: 100%; height: 800px"></div>
-<link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/leaflet.css" />
+<script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script>
 var mapOptions = {
     attributionControl: false,
@@ -38,6 +38,6 @@ marker.bindPopup(`
 {% endif %}
 {% endfor %}
 
-var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 map.addLayer(layer);
 </script>
