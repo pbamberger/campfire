@@ -19,7 +19,7 @@ var map = new L.map('map', mapOptions);
 {% if author[1].lng and author[1].lat %}
 {% assign posts = site.posts | where: "author", author[0] %}
 {% if posts.size > 0 %}
-var icon = L.icon({ iconUrl: "{{site.url}}{{site.baseurl}}/assets/images/avatars/{{ author[0] }}.webp", iconSize: [50, 50] });
+var icon = L.icon({ iconUrl: "{{site.baseurl}}/assets/images/avatars/{{ author[0] }}.webp", iconSize: [50, 50] });
 var marker = L.marker([ {{ author[1].lat }}, {{ author[1].lng }} ], { title: "{{ author[1].name }}", icon: icon }).addTo(map);
 {% else %}
 var marker = L.marker([ {{ author[1].lat }}, {{ author[1].lng }} ], { title: "{{ author[1].name }}" }).addTo(map);
