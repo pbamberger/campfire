@@ -5,21 +5,35 @@ permalink: /docs
 comments: false
 ---
 
-You need to make a github account
+## How to add or edit a page
 
-Make a branch
+We use GitHub to store all our pages. GitHub is a “version control system”, it tracks changes to a set of document, and allows them to be publically published when approved
 
-Add a recipe page from the recipe template
+The campfire site on GitHub is called a “repository” or “repo” for short
 
-Choose a good set of tags and categories from these lists. If you think a new category or tags should be used, make a comment on your PR for the reason why?
+When anyone wants to makes a change to the Campfire site, they start by making a separate section to hold changes, we call this a “branch”. Multiple branches can exist at the same time. Each branch has a name defining why it exists. E.g. “add sausage recipe”
 
-Add an author from the author template if your Scout group is not already listed. No personal authors please, please do by Scout group or Scout office
+The public Campfire site is built from the ”main” branch
 
-Commit your changes
+When all the changes on a branch have been completed, you can submit them for approval and publishing by making a “pull request”, or “PR” for short. This is a request to pull the changes into the main branch
 
-Submit a PR
+Step 1: Open a GitHub account
 
-Then sit back and await approval and publishing
+Step 2: Start a branch
+
+Step 3: Add new pages and images, or edit existing pages
+
+For a new page, copy the text from the master recipe template, and navigate to your groups folder, and click “create new file”. Paste in the template, and edit the title etc, and add your recipe details
+
+Choose a good set of tags and categories from these lists
+
+If you think a new category or tags should be used, make a comment on your PR for the reason why?
+
+Add you group name code from the author page template. If your Scout group is not already listed please mention int he PR. No personal authors please, please do by Scout group or Scout office for long term maintainability
+
+Step 4: Commit your changes. You cna do this multiple times, as you make a significant part of a change, or if you come back latter to improve on what you have done earlier
+
+Step 5: Submit a PR. Then sit back and await approval and publishing
 
 ---
 
@@ -51,13 +65,9 @@ For more information about how to use `Bundler` in your Jekyll project, this tut
 
 ---
 
-
----
-
 There are lots of powerful things you can do with the Markdown editor. If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
 
 As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.
-
 
 ## Special formatting
 
@@ -101,55 +111,4 @@ There are two types of code elements which can be inserted in Markdown, the firs
 }
 ```
 
-#### JS
-
-```js
-// alertbar later
-$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 280) {
-        $('.alertbar').fadeIn();
-    } else {
-        $('.alertbar').fadeOut();
-    }
-});
-```
-
-#### Python
-
-```python
-print("Hello World")
-```
-
-#### Ruby
-
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
-#### C
-
-```c
-printf("Hello World");
-```
-
-
-
-
 ![walking]({{ site.baseurl }}/assets/images/avatar.webp)
-
-## Reference lists
-
-The quick brown jumped over the lazy.
-
-Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
-
-## Full HTML
-
-Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits
-
-<p><iframe style="width:100%;" height="600" src="https://jekyllrb.com/" frameborder="0" allowfullscreen></iframe></p>
-
----
