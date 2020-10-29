@@ -3,6 +3,17 @@
 # Change this file for any custom CSS.
 ---
 
+/* footer */
+
+.footer, xbody {
+	background-color: #f7f7f7;
+}
+
+.footer-column {
+	column-width: 180px;
+	column-gap: 5em;
+}
+
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display: inline;

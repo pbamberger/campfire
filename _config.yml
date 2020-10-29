@@ -1,14 +1,17 @@
-name: "Campfire"
-liveurl: https://campfire.waitoru.org
-title: "Campfire recipe box"
 description: "All the best burnt offerings from the Scouts of Aotearoa"
-#disqus: 'demowebsite'
 favicon: 'assets/images/logo.webp'
 google_analytics: 'UA-16040666-10'
 include: ["_pages"]
+liveurl: https://campfire.waitoru.org
 logo: 'assets/images/logo.webp'
-#mailchimp-list: 'https://xxxx.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
+name: "Campfire"
 permalink: /:title/
+title: "Campfire recipe box"
+#disqus: 'demowebsite'
+#mailchimp-list: 'https://xxxx.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
+
+tag_page_layout: tag
+tag_page_dir: tag
 
 pwa:
   cacheName: "campfire-v"

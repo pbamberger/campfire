@@ -1,6 +1,6 @@
 ---
 layout: page
-title: status
+title: Status
 permalink: /status
 comments: false
 ---
@@ -28,6 +28,10 @@ PWA Cache name: {{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}
             });
     }
 
+    function home() {
+        window.location.href = '/status';
+    }
+
     function resetServiceWorker () {
         clearCache('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
         clearCache('base-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
@@ -37,9 +41,11 @@ PWA Cache name: {{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}
             .then(function(registrations) {
                 for(let registration of registrations) {
                     registration.unregister().then(() => {
-                        console.log(`Reset SW, unregister service worker`);
+                        console.log('Reset SW, unregister service worker');
                     });
                 }
             });
+
+        setTimeout(home, 1000);
     }
 </script>
