@@ -1,226 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>{% if page.title != 'Home' %}{{ page.title }} | {% endif %}{{site.name}}</title>
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/icon192.webp" />
-<link rel="canonical" href="{{ site.liveurl }}{{ site.baseurl }}{{ page.permalink }}" />
-<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.webp" />
-<link rel="manifest" href="{{ site.baseurl }}/manifest.webmanifest" />
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/screen.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
-<meta charset="utf-8" />
-<meta name="description" content="{{ site.description }}" />
-<meta name="theme-color" content="#4E008E" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta property="og:description" content="{{ site.description }}" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:url" content="{{ site.liveurl }}{{ site.baseurl }}{{ page.permalink }}" />
+    <title>{% if page.title != 'Home' %}{{ page.title }} | {% endif %}{{site.name}}</title>
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/icon192.webp" />
+    <link rel="canonical" href="{{ site.liveurl }}{{ site.baseurl }}{{ page.permalink }}" />
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.webp" />
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.webmanifest" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/screen.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+    <meta charset="utf-8" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="theme-color" content="#4E008E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:url" content="{{ site.liveurl }}{{ site.baseurl }}{{ page.permalink }}" />
 </head>
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{site.google_analytics}}');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{site.google_analytics}}');
 </script>
 {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
 <body class="{{layout}}">
-	{% comment %} Defer loading of font and font awesome {% endcomment %}
-	<noscript id="deferred-styles">
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css" />
-        {% comment %} 
-		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    {% comment %} Defer loading of font and font awesome {% endcomment %}
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css" />
+        {% comment %}
+        <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         {% endcomment %}
-	</noscript>
+    </noscript>
 
-{% comment %} Begin Menu Navigation {% endcomment %}
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
-    <div class="container pr-0">
+    {% comment %} Begin Menu Navigation {% endcomment %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+        <div class="container pr-0">
 
-        {% comment %} <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> Begin Logo {% endcomment %}
-        <div class="mainheading">
-            <a class="navbar-brand" href="{{ site.baseurl }}/">
-                <h1 class="sitetitle">{{ site.name }}</h1>
-            </a>
-        </div>
-        {% comment %} End Logo {% endcomment %}
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        {% comment %} Begin Menu {% endcomment %}
-        <div class="collapse navbar-collapse" id="navbarMediumish">
-        <ul class="navbar-nav ml-auto">
-            {% if page.url == "/recipes" %}
-            <li class="nav-item active">
-            {% else %}
-            <li class="nav-item">
-            {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/recipes">Recipes</a>
-            </li>
-
-            {% if page.url == "/planning" %}
-            <li class="nav-item active">
-            {% else %}
-            <li class="nav-item">
-            {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/planning">Planning</a>
-            </li>
-
-            {% if page.url == "/techniques" %}
-            <li class="nav-item active">
-            {% else %}
-            <li class="nav-item">
-            {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
-            </li>
-            
-            {% if page.url == "/cookbook" %}
-            <li class="nav-item active">
-            {% else %}
-            <li class="nav-item">
-            {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter" class="badge badge-primary">1</span></sup></a>
-            </li>
-
-            <li>
-                <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-                    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" xplaceholder="Search..."/>
-                </form>
-                <div id="lunrsearchresults">
-                    <ul></ul>
-                </div>
-            </li>
-        </ul>
-        </div>
-        {% comment %} End Menu {% endcomment %}
-    </div>
-</nav>
-{% comment %} End Navigation {% endcomment %}
-
-<div class="site-content">
-
-<div class="container">
-
-<div class="main-content">
-    {{ content }}
-</div>
-
-{% if site.mailchimp-list %}
-{% comment %} Bottom Alert Bar {% endcomment %}
-<div class="alertbar">
-	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-            <div class="mc-field-group">
-            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            {% comment %} <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> Begin Logo
+            {% endcomment %}
+            <div class="mainheading">
+                <a class="navbar-brand" href="{{ site.baseurl }}/">
+                    <h1 class="sitetitle">{{ site.name }}</h1>
+                </a>
             </div>
-        </form>
-	</div>
-</div>
-{% endif %}
-    
-</div> {% comment %} /.container {% endcomment %}
+            {% comment %} End Logo {% endcomment %}
 
-{% comment %} Categories Jumbotron {% endcomment %}
-<div class="jumbotron fortags">
-	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
-            <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
-            </div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-            {% if 1 == 0 %}
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
-            {% endif %}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            {% assign tags_list = site.tags %}
-            {% if tags_list.first[0] == null %}
-                {% for tag in tags_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/tags#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{ tag | camelcase }} ({{ site.tags[tag].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for tag in tags_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{ tag[0] | camelcase }} ({{ tag[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
-		</div>
-	</div>
-</div>
-
-{% comment %} Begin Footer {% endcomment %}
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © 1908 - {{ site.time | date: "%Y" }} Scouts New Zealand.
-            </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right navbar navbar-expand-lg navbar-light bg-white">
+            {% comment %} Begin Menu {% endcomment %}
+            <div class="collapse navbar-collapse" id="navbarMediumish">
                 <ul class="navbar-nav ml-auto">
+                    {% if page.url == "/recipes" %}
+                    <li class="nav-item active">
+                        {% else %}
                     <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/recipes">Recipes</a>
+                    </li>
+                    {% if page.url == "/planning" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/planning">Planning</a>
+                    </li>
+                    {% if page.url == "/techniques" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
+                    </li>
+                    {% if page.url == "/about" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
                         <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                     </li>
+                    {% if page.url == "/cookbook" %}
+                    <li class="nav-item active">
+                        {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/authors">Authors</a>
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter"
+                                    class="badge badge-primary">1</span></sup></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/maps">Maps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/status">Status</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/tags">Tags</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://github.com/Kaukapakapa-Scout-Group/campfire"><i class="fab fa-github"></i> Fork {{ site.name }} on Github</a>        
+                    <li>
+                        <form class="bd-search"
+                            onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+                            <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch"
+                                name="q" maxlength="255" value="" xplaceholder="Search..." />
+                        </form>
+                        <div id="lunrsearchresults">
+                            <ul></ul>
+                        </div>
                     </li>
                 </ul>
             </div>
+            {% comment %} End Menu {% endcomment %}
         </div>
-    </div>
-</footer>
-{% comment %} End Footer {% endcomment %}
+    </nav>
+    {% comment %} End Navigation {% endcomment %}
 
-</div> {% comment %} /.site-content {% endcomment %}
+    <div class="site-content">
 
-{% comment %} Scripts {% endcomment %}
-<script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
-<script src="{{ site.baseurl }}/assets/js/bootstrap.js"></script>
-<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
-<script src="{{ site.baseurl }}/assets/js/main.js"></script>
-<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
-<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
+        <div class="container">
 
-{% if page.layout == 'post' %}
+            <div class="main-content">
+                {{ content }}
+            </div>
+
+            {% if site.mailchimp-list %}
+            {% comment %} Bottom Alert Bar {% endcomment %}
+            <div class="alertbar">
+                <div class="container text-center">
+                    <span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a
+                        <b>story</b> from us, subscribe to our newsletter</span>
+                    <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form"
+                        class="wj-contact-form validate" target="_blank" novalidate>
+                        <div class="mc-field-group">
+                            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
+                                autocomplete="on" required>
+                            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+
+        </div> {% comment %} /.container {% endcomment %}
+
+        <footer class="footer page-footer xfont-small xpt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-md-0 mb-12 footer-column">
+                        <ul class="navbar-nav ml-auto navbar-light">
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                            </li>
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/authors">Authors</a>
+                            </li>
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
+                            </li>
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/maps">Maps</a>
+                            </li>
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/status">Status</a>
+                            </li>
+                            <li class="navbar-nav">
+                                <a class="nav-link" target="_blank" href="https://github.com/Kaukapakapa-Scout-Group/campfire">
+                                    <i>Fork {{ site.name }} on Github</i>
+                                </a>
+                            </li>
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/categories"><b>Categories</b></a>
+                            </li>
+                        {% assign categories_list = site.categories | sort %}
+                        {% for category in categories_list %}
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{site.baseurl}}/{{ category[0] | replace: ' ','-' }}">{{ category[0] }}</a>
+                            </li>
+                        {% endfor %}
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/tags"><b>Tags</b></a>
+                            </li>
+                        {% assign tags_list = site.tags | sort %}
+                        {% if tags_list.first[0] == null %}
+                        {% for tag in tags_list %}
+                            <li class="navbar-nav">
+                                <a class="nav-link tag-reload" href="{{site.baseurl}}/tags#{{ tag | url_escape | strip | replace: ' ', '-' }}" onclick="tagclick('{{ tag }}');">#{{ tag | replace: ' ','-' }} [{{ site.tags[tag].size }}]</a>
+                            </li>
+                        {% endfor %}
+                        {% else %}
+                        {% for tag in tags_list %}
+                            <li class="navbar-nav">
+                                <a class="nav-link tag-reload" href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}" onclick="tagclick('{{ tag[0] }}');">#{{ tag[0] | replace: ' ','-' }} <sup>{{ tag[1].size }}</sup></a>
+                            </li>
+                        {% endfor %}
+                        {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center text-sm-center">
+                        <br/>
+                        Copyright © 1908 - 2020 Scouts New Zealand.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div> {% comment %} /.site-content {% endcomment %}
+
+    {% comment %} Scripts {% endcomment %}
+    <script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
+
+    {% if page.layout == 'post' %}
     {% if site.disqus %}
     <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
     {% endif %}
-{% endif %}
+    {% endif %}
 
 </body>
 </html>

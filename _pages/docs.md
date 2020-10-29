@@ -29,9 +29,9 @@ Choose a good set of tags and categories from these lists
 
 If you think a new category or tags should be used, make a comment on your PR for the reason why?
 
-Add you group name code from the author page template. If your Scout group is not already listed please mention int he PR. No personal authors please, please do by Scout group or Scout office for long term maintainability
+Add you group name code from the author page template. If your Scout group is not already listed, please mention in the PR. No personal authors please, please do by Scout group or Scout office for long term maintainability
 
-Step 4: Commit your changes. You cna do this multiple times, as you make a significant part of a change, or if you come back latter to improve on what you have done earlier
+Step 4: Commit your changes. You can do this multiple times, as you make a significant part of a change, or if you come back latter to improve on what you have done earlier
 
 Step 5: Submit a PR. Then sit back and await approval and publishing
 

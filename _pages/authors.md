@@ -6,7 +6,9 @@ permalink: /authors
 
 <div class="">
 {% for author in site.data.authors %}
-<div class="section-title col-md-12 mt-4">
+  {% assign posts = site.posts | where: "author", author[0] %}
+  {% if posts != empty %}
+  <div class="section-title col-md-12 mt-4">
     <h2 id="{{ author[1].id }}"><span class="text-capitalize">{{ author[1].name }}</span></h2>
     <p>
       {% if author[1].lng %}
@@ -16,13 +18,15 @@ permalink: /authors
       {% if author[1].lng %}
         </a>
       {% endif %}
-  </p>
-  {% assign posts = site.posts | where: "author", author[0] %}
+    </p>
+  <ul>
   {% for post in posts %}
-    <div>
+    <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{% if post.featured == true %} *{% endif %}</a>
-    </div>
+    </li>
   {% endfor %}
-</div>
+  </ul>
+  </div>
+  {% endif %}
 {% endfor %}
 </div>

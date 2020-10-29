@@ -48,6 +48,13 @@ window.onload = function () {
   }
 };
 
+function tagclick(tag) {
+  if (window.location.pathname.slice(-4) === 'tags') {
+    window.location.hash = tag;
+    window.location.reload();
+  }
+}
+
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug
  * Copyright 2014-2017 The Bootstrap Authors
