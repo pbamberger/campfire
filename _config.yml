@@ -10,9 +10,6 @@ title: "Campfire recipe box"
 #disqus: 'demowebsite'
 #mailchimp-list: 'https://xxxx.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
 
-#tag_page_layout: tag
-#tag_page_dir: tag
-
 pwa:
   cacheName: "campfire-v"
   cacheVersion: 2
@@ -37,6 +34,9 @@ jekyll-archives:
     year: '/year/:year/'
     month: '/month/:year/:month/'
     
+#tag_page_layout: tag
+#tag_page_dir: tag
+
 # Pagination 
 paginate: 12
 paginate_path: /page:num/
