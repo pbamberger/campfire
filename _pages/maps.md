@@ -32,7 +32,7 @@ marker.bindPopup(`
 <p>{{ author[1].address1 }} {{ author[1].address2 }} {{ author[1].city }}</p>
 {% for post in posts %}
 <div>
-<a target="_blank" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{% if post.featured == true %} *{% endif %}</a>
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{% if post.featured == true %} *{% endif %}</a>
 </div>
 {% endfor %}
 </div>

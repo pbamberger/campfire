@@ -2,6 +2,7 @@
 title: "Tags"
 layout: default
 permalink: "/tags"
+cache: always
 ---
 
 {% for tag in site.tags %}

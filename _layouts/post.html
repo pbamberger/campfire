@@ -8,15 +8,20 @@ post_class: post-template
 {% comment %} Begin Article {% endcomment %} 
 <div class="container">
     <div class="row">
-        {% comment %} Post {% endcomment %} 
+        {% comment %} Post {% endcomment %}
         {% assign author_key = page.author | downcase %}
         {% assign author = site.data.authors[author_key] %}
+        {% if page.image contains "://" %}
+            {% capture page_image %}{{ page.image }}{% endcapture %}
+        {% else  %}
+            {% capture page_image %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ page.image }}{% endcapture %}
+        {% endif %}
         <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading">
                 <h1 class="posttitle">
                     {{ page.title }}
                     {% if page.cache != "always" %}
-                    <button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); addToResourceCache([ '{{ site.baseurl }}/{{ page.image }}' ]); this.hidden=true;" title="Save to my Cookbook" />
+                    <button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); addToResourceCache([ '{{ page_image }}' ]); this.hidden=true;" title="Save to my Cookbook" />
                     {% endif %}
                 </h1>
             </div>
@@ -28,9 +33,7 @@ post_class: post-template
             {% comment %} End Adsense {% endcomment %}
 
             {% comment %} Post Featured Image {% endcomment %}
-            {% if page.image %}
-            <img class="featured-image img-fluid" loading="lazy" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-            {% endif %}
+            <img class="featured-image img-fluid" loading="lazy" src="{{ page_image }}" alt="{{ page.title }}">
             {% comment %} End Featured Image {% endcomment %}
 
             {% if page.author %}

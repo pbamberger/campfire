@@ -17,8 +17,7 @@ const baseToCache = [
     '/assets/js/jquery.js',
     '/assets/js/main.js',
     '/assets/js/mediumish.js',
-
-    '/assets/images/jumbotron.webp',
+    
     '/assets/images/logo.webp'
 ];
 
@@ -31,7 +30,12 @@ const recentPagesToCache = [
 const recentResourceToCache = [
     {% for post in site.posts limit:6 %}
     {% if post.image %}
-    '{{ site.baseurl }}/{{ post.image }}',
+        {% assign author_key = post.author | downcase %}
+        {% if post.image contains "://" %}
+        '{{ post.image }}',
+        {% else  %}
+        '{{ post.baseurl }}/assets/images/{{author_key}}/{{ post.image }}',
+        {% endif %}
     {% endif %}
     {% endfor %}
 ];
