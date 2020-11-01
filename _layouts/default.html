@@ -21,6 +21,17 @@
 </head>
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYZGLT3LQ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JYZGLT3LQ9');
+</script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -98,17 +109,20 @@
                         {% else %}
                     <li class="nav-item">
                         {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter"
-                                    class="badge badge-primary">1</span></sup></a>
+                        <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook 
+                            <sup>
+                                <span id="cookbookCounter" class="badge badge-primary">0</span>
+                            </sup>
+                        </a>
                     </li>
                     <li>
                         <form class="bd-search"
                             onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-                            <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch"
-                                name="q" maxlength="255" value="" xplaceholder="Search..." />
+                            <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" xplaceholder="Search..." />
                         </form>
                         <div id="lunrsearchresults">
-                            <ul></ul>
+                            <ul>
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -146,7 +160,7 @@
 
         </div> {% comment %} /.container {% endcomment %}
 
-        <footer class="footer page-footer xfont-small xpt-4">
+        <footer class="footer page-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mb-md-0 mb-12 footer-column">

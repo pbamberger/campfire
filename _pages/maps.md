@@ -22,7 +22,9 @@ var map = new L.map('map', mapOptions);
 var icon = L.icon({ iconUrl: "{{site.baseurl}}/assets/images/{{ author[0] }}/avatar.webp", iconSize: [50, 50] });
 var marker = L.marker([ {{ author[1].lat }}, {{ author[1].lng }} ], { title: "{{ author[1].name }}", icon: icon }).addTo(map);
 {% else %}
-var marker = L.marker([ {{ author[1].lat }}, {{ author[1].lng }} ], { title: "{{ author[1].name }}" }).addTo(map);
+var icon = L.icon({ iconUrl: "{{site.baseurl}}/assets/images/scouts.webp", iconSize: [25, 25] });
+var marker = L.marker([ {{ author[1].lat }}, {{ author[1].lng }} ], { title: "{{ author[1].name }}", icon: icon }).addTo(map);
+//var marker = L.marker([ {{ author[1].lat }}, {{ author[1].lng }} ], { title: "{{ author[1].name }}" }).addTo(map);
 {% endif %}
 marker.bindPopup(`
 <div>
