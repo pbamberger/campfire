@@ -25,33 +25,17 @@ permalink: "/tags"
 <script>
     async function renderCurrentKeyTag() {
         var tag = window.location.hash;
-        $(tag).collapse('show');
+        if (tag.length > 0) {
+            $(tag).collapse('show');
+        }
+        else {
+            $('div.collapse').each(function( index ) {
+                $(this).collapse('show');
+            });
+        }
     }
 
     window.addEventListener('load', () => {
         renderCurrentKeyTag();
     });
-
-    // function tagclick(tag) {
-    //     window.location.reload();
-    // }
-
-    // window.addEventListener('hashchange', () => {
-    //      renderCurrentKeyTag();
-    // });
-
-    // function reload() {
-    //     // loadArticle = function(articleId){
-    //     //     // code to query/load the article
-    //     // };
-    //     // if (window.location.hash)
-    //     //     articleLoad(window.location.hash);
-
-    //     $('.tag-reload').click(function(){
-    //         window.location.hash = $(this).attr('rel');
-    //         window.location.reload();
-    //     });
-    // };
-
-    // setTimeout(reload, 100);
 </script>

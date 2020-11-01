@@ -13,23 +13,12 @@ post_class: post-template
         {% assign author = site.data.authors[author_key] %}
         <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading">
-                {% comment %} Author Box {% endcomment %}
-                {% if page.sauthor %}
-                <div class="row post-top-meta">
-                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
-                        {% if author.avatar %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.name }}">
-                        {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}">
-                        {% endif %}
-                    </div>
-                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <!-- <a class="link-dark" href="{{ author.web }}" target="_blank">{{ author.name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a> -->
-                        <span class="author-description">{{ author.name }}</span>
-                    </div>
-                </div>
-                {% endif %}
-                <h1 class="posttitle">{{ page.title }}{% if page.cache != "always" %}<button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); addToResourceCache([ '{{ site.baseurl }}/{{ page.image }}' ]); this.hidden=true;" title="Save to my Cookbook"></button>{% endif %}</h1>
+                <h1 class="posttitle">
+                    {{ page.title }}
+                    {% if page.cache != "always" %}
+                    <button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); addToResourceCache([ '{{ site.baseurl }}/{{ page.image }}' ]); this.hidden=true;" title="Save to my Cookbook" />
+                    {% endif %}
+                </h1>
             </div>
 
             {% comment %} Adsense if enabled from _config.yml (change your pub id and slot) {% endcomment %}
@@ -47,8 +36,33 @@ post_class: post-template
             {% if page.author %}
             <div class="row post-top-meta">
                 <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                    <img class="author-thumb" src="{{site.baseurl}}/assets/images/{{ author_key }}/avatar.webp" alt="{{ author_key }}" />
-                    <span class="author-description">{{ author.name }}</span>
+                    {% if page.author %}
+                    {% if author.web %}
+                        {% capture author_web %}{{ author.web }}{% endcapture %}
+                    {% else  %}
+                        {% capture author_web %}{{ site.baseurl }}/authors#{{ author.id }}{% endcapture %}
+                    {% endif %}
+                    <span class="meta-footer-thumb">
+                        <a href="{{ author_web }}">
+                        {% if author.avatar %}
+                            <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}" />
+                        {% else %}
+                            <img class="author-thumb" src="{{site.baseurl}}/assets/images/{{ author_key }}/avatar.webp" alt="{{ author.name }}" />                
+                        {% endif %}
+                        </a>
+                    </span>
+                    <span class="author-meta">
+                        <span class="post-name">
+                            <a href="{{ author_web }}">
+                                {{ author.name }}
+                            </a>
+                        </span>
+                        <br/>
+                    {% endif %}
+                        <span class="post-date">
+                            {{ page.date | date_to_string }}
+                        </span>
+                    </span>
                 </div>
             </div>
             {% endif %}
