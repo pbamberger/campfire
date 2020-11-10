@@ -7,24 +7,20 @@
 <script>
     async function renderCurrentKeys() {
         let list = document.querySelector('#cache-list');
-
         while (list.firstChild) {
             list.removeChild(list.firstChild);
         }
-
         const results = [];
         const cache = await caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
         for (const request of await cache.keys()) {
             const match = request.url.match(/\/\/(.*?)\/(.*)/);
             if (match) {
                 const path = match[2];
-            
                 const response = await cache.match(request);
                 const body = await response.text();
                 const titleMatch = body.match(/<title>(.*)\|(.*?)<\/title>/);
                 const title = (titleMatch != null) ? titleMatch[1] : request.url;
-                //const authorMatch = body.match(/<a class="link-dark" href=(.*?)>(.*?)<\/a>/);
-                const authorMatch = body.match(/<span class="author-description">(.*?)<\/span>/);
+                const authorMatch =    body.match(/<span class="post-author">(.*)<\/span>/);
                 const author = (authorMatch != null) ? authorMatch[1] : 'none';
                 const publishedMatch = body.match(/<span class="post-date">(.*)<\/span>/);
                 const published = (publishedMatch != null) ? publishedMatch[1] : '';

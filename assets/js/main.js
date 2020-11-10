@@ -35,7 +35,7 @@ async function updateCookbookCount() {
   });
 }
 
-window.onload = function () {
+window.addEventListener("load", () => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js')
       .then(function (registration) {
@@ -45,8 +45,20 @@ window.onload = function () {
       .catch(function (error) {
         console.log('Campfire service worker registration failed, error:', error);
       });
+    // Notification.requestPermission(result =>  {
+    //   console.log(result)
+    //   if (result === 'granted') {
+    //     alert('thanks for giving me permissions')
+    //   }
+    //   else {
+    //     alert('no pushes')
+    //   }
+    // });
   }
-};
+  else {
+    alert('no cookbook or pushes')
+  }
+});
 
 function tagclick(tag) {
   if (window.location.pathname.slice(-4) === 'tags') {

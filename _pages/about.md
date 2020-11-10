@@ -14,7 +14,7 @@ When you want to save a page to your cookbook for when you are at camp, or out o
 
 e.g.
 
-<div style="padding: 10px 10px 1px 10px; background-color: #eeeeee; width: 400px;">
+<div style="padding: 10px 10px 1px 10px; background-color: #eeeeee; width: 450px;">
 <h1 class="posttitle">Chocolate Fish <span  style="border: red dashed 2px; border-radius: 60% 40% 60% 40%; padding: 10px 25px 20px 10px;"><button class="btn btn-lg save" title="Save to my Cookbook"> </button></span></h1>
 </div>
 
