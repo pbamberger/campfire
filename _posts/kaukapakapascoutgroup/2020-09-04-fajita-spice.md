@@ -57,7 +57,7 @@ Serve with grilled capsicum strips, or other grilled vegetable strips, and chipo
 
 Use skirt steak, and dredge steak until thoroughly covered. BBQ as per chicken, but required temperature is 55°C to 65°C (rare to medium)
 
-If using an oven, sear in a hot pan for a minute a side before baking for about 10 minutes. Us a pan with a metal handle so you can just place the pan and steaks in oven without having to make a mess 
+If using an oven, sear in a hot pan for a minute a side before baking for about 10 minutes. Us a pan with a metal handle so you can just place the pan and steaks in oven without having to make a mess
 
 ## History
 

@@ -16,6 +16,12 @@ Site Description: {{site.description}}
 
 PWA Cache name: {{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}
 
+Notifications: <span id='notification'>unavailable</span>
+
+Push Notification: <span id='pushNotification'>unavailable</span>
+
+Service Workers: <span id='serviceWorker'>unavailable</span>
+
 <button onclick="resetServiceWorker();">Clear cookbook, and reset service worker caches</button>
 
 <script>
@@ -49,4 +55,16 @@ PWA Cache name: {{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}
 
         setTimeout(home, 1000);
     }
+
+    window.addEventListener("load", () => {
+        if (Notification.permission != 'denied') {
+            document.querySelector('#notification').innerText = 'available';
+        }
+        if ('PushManager' in window) {
+            document.querySelector('#pushNotification').innerText = 'available';
+        }
+        if ('serviceWorker' in navigator) {
+            document.querySelector('#serviceWorker').innerText = 'available';
+        }
+    });
 </script>

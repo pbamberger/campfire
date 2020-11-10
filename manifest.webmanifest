@@ -1,6 +1,7 @@
 {
   "background_color": "#4E008E",
   "display": "standalone",
+  "gcm_sender_id": "354308702398",
   "name": "Campfire Recipes",
   "orientation": "portrait",
   "scope": ".",

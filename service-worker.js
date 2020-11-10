@@ -128,3 +128,49 @@ self.addEventListener(
 
         );
     });
+
+self.addEventListener(
+    'notificationclose',
+    (e) => {
+        var notification = e.notification;
+        var primaryKey = notification.data.primaryKey;    
+        console.log('Closed notification: ' + primaryKey);
+    });
+
+self.addEventListener(
+    'notificationclick',
+    (e) => {
+        var notification = e.notification;
+        var primaryKey = notification.data.primaryKey;
+        var action = e.action;
+        
+        if (action === 'close') {
+            notification.close();
+        } 
+        else if (action === 'explore') {
+            clients.openWindow('/about');
+            notification.close();
+        }
+    });
+
+self.addEventListener('push',
+    (e) => {
+        if (e.data) {
+            console.log('This push event has data: ', e.data.text());
+            var options = {
+                body: 'Here is a notification body!',
+                icon: 'images/example.png',
+                vibrate: [100, 50, 100],
+                data: {
+                    dateOfArrival: Date.now(),
+                    primaryKey: 1
+                }
+                 
+            };
+            //const options = JSON.parse(e.data.text());
+            const promiseChain = self.registration.showNotification('Campfire', options);
+            e.waitUntil(promiseChain);
+        } else {
+            console.log('This push event has no data.');
+        }
+    });
