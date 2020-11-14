@@ -35,12 +35,39 @@ async function updateCookbookCount() {
   });
 }
 
+function updateActiveMenu() {
+  if (window.location.pathname.slice(-10) === 'categories') {
+    hash = window.location.hash;
+    if (hash) {
+      element = document.getElementById('category' + hash.substring(1));
+      if (element) {
+        element.classList.add('active');
+      }
+    }
+  }
+}
+
+function categoryClick(category) {
+  if (window.location.pathname.slice(-10) === 'categories') {
+    window.location.hash = category;
+    window.location.reload();
+  }
+}
+
+function tagClick(tag) {
+  if (window.location.pathname.slice(-4) === 'tags') {
+    window.location.hash = tag;
+    window.location.reload();
+  }
+}
+
 window.addEventListener("load", () => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js')
       .then(function (registration) {
         console.log('Campfire service worker registration successful');
         updateCookbookCount();
+        updateActiveMenu();
       })
       .catch(function (error) {
         console.log('Campfire service worker registration failed, error:', error);
@@ -59,13 +86,6 @@ window.addEventListener("load", () => {
     alert('no cookbook or pushes')
   }
 });
-
-function tagclick(tag) {
-  if (window.location.pathname.slice(-4) === 'tags') {
-    window.location.hash = tag;
-    window.location.reload();
-  }
-}
 
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug

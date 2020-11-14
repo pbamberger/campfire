@@ -63,26 +63,14 @@
             {% comment %} Begin Menu {% endcomment %}
             <div class="collapse navbar-collapse" id="navbarMediumish">
                 <ul class="navbar-nav ml-auto">
-                    {% if page.url == "/recipes" %}
-                    <li class="nav-item active">
-                        {% else %}
-                    <li class="nav-item">
-                        {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}/recipes">Recipes</a>
+                    <li id="categoryrecipes" class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/categories#recipes" onclick="categoryClick('recipes');">Recipes</a>
                     </li>
-                    {% if page.url == "/planning" %}
-                    <li class="nav-item active">
-                        {% else %}
-                    <li class="nav-item">
-                        {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}/planning">Planning</a>
+                    <li id="categoryplanning" class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/categories#planning" onclick="categoryClick('planning');">Planning</a>
                     </li>
-                    {% if page.url == "/techniques" %}
-                    <li class="nav-item active">
-                        {% else %}
-                    <li class="nav-item">
-                        {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
+                    <li id="categorytechniques" class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/categories#techniques" onclick="categoryClick('techniques');">Techniques</a>
                     </li>
                     {% if page.url == "/about" %}
                     <li class="nav-item active">
@@ -164,9 +152,9 @@
                             <li class="navbar-nav">
                                 <a class="nav-link" href="{{ site.baseurl }}/maps">Maps</a>
                             </li>
-                            <li class="navbar-nav">
+                            <!-- <li class="navbar-nav">
                                 <a class="nav-link" href="{{ site.baseurl }}/notify">Notify</a>
-                            </li>
+                            </li> -->
                             <li class="navbar-nav">
                                 <a class="nav-link" href="{{ site.baseurl }}/status">Status</a>
                             </li>
@@ -180,27 +168,29 @@
                             </li>
                         {% assign categories_list = site.categories | sort %}
                         {% for category in categories_list %}
+                            {% assign categoryName = category[0] | replace: ' ','-' %}
+                            {% assign categorySize = category[1].size %}
                             <li class="navbar-nav">
-                                <a class="nav-link" href="{{site.baseurl}}/{{ category[0] | replace: ' ','-' }}">{{ category[0] }}</a>
+                                <a class="nav-link" href="{{site.baseurl}}/categories#{{ categoryName }}" onclick="categoryClick('{{ categoryName }}');">{{ category[0] }}<sup>{{ categorySize }}</sup></a>
                             </li>
                         {% endfor %}
                             <li class="navbar-nav">
                                 <a class="nav-link" href="{{ site.baseurl }}/tags"><b>Tags</b></a>
                             </li>
                         {% assign tags_list = site.tags | sort %}
-                        {% if tags_list.first[0] == null %}
                         {% for tag in tags_list %}
+                            {% if tags_list.first[0] == null %}
+                                {% assign tagName = tag | url_escape | strip | replace: ' ', '-' %}
+                                {% assign tagSize = site.tags[tag].size %}
+                                
+                            {% else %}
+                                {% assign tagName = tag[0] | url_escape | strip | replace: ' ', '-' %}
+                                {% assign tagSize = tag[1].size %}
+                            {% endif %}
                             <li class="navbar-nav">
-                                <a class="nav-link tag-reload" href="{{site.baseurl}}/tags#{{ tag | url_escape | strip | replace: ' ', '-' }}" onclick="tagclick('{{ tag }}');">#{{ tag | replace: ' ','-' }} [{{ site.tags[tag].size }}]</a>
+                                <a class="nav-link tag-reload" href="{{site.baseurl}}/tags#{{ tagName }}" onclick="tagClick('{{ tagName }}');">#{{ tagName }} <sup>{{ tagSize }}</sup></a>
                             </li>
                         {% endfor %}
-                        {% else %}
-                        {% for tag in tags_list %}
-                            <li class="navbar-nav">
-                                <a class="nav-link tag-reload" href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}" onclick="tagclick('{{ tag[0] }}');">#{{ tag[0] | replace: ' ','-' }} <sup>{{ tag[1].size }}</sup></a>
-                            </li>
-                        {% endfor %}
-                        {% endif %}
                         </ul>
                     </div>
                 </div>
