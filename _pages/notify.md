@@ -3,26 +3,23 @@ layout: page
 title: Notify
 permalink: /notify
 comments: false
-cache: always
 ---
 
-### Subscribe 
+### Subscribe
 
-<form class="form-horizontal">
+_These fields are all optional_
 
-<div class="form-group"><label for="226531911">Email</label><input name="emailAddress" id="226531911" type="text" maxlength=100 class="form-control"/></div>
-
-<div class="form-group"><label for="565532832">Mobile Number</label><input name="mobileNumber" id="565532832" type="text" maxlength=20 class="form-control"/></div>
-
-<div class="form-group"><label for="1775364902">Push Notifications</label><input name="endpointUrl" id="1775364902" type="text" maxlength=200 class="form-control"/></div>
 
 <div class="form-group"><label for="855473300">Given Name</label><input name="givenName" id="855473300" type="text" maxlength=50 class="form-control"/></div>
 
 <div class="form-group"><label for="2122144929">Family Name</label><input name="familyName" id="2122144929" type="text" maxlength=50 class="form-control"/></div>
 
-<button onclick="subscribeUser();">subscribe</button>
+<div class="form-group"><label for="226531911">Email</label><input name="emailAddress" id="226531911" type="text" maxlength=100 class="form-control"/></div>
 
-</form>
+<div class="form-group"><label for="565532832">Mobile Number</label><input name="mobileNumber" id="565532832" type="text" maxlength=20 class="form-control"/></div>
+
+<button onclick="subscribeUser();">subscribe to site updates</button>
+
 
 <br />
 
@@ -53,7 +50,7 @@ cache: always
             navigator.serviceWorker.getRegistration().then(registration => {
                 var options = {
                     body: 'notification body!',
-                    icon: 'images/example.png',
+                    icon: 'assets/images/scouts.webp',
                     vibrate: [100, 50, 100],
                     data: {
                         dateOfArrival: Date.now(),
@@ -86,14 +83,16 @@ cache: always
                 };
                 registration.pushManager.subscribe(subscribeOptions).then(subscription => {
                     const endpointUrl = subscription.endpoint;
-                    const emailAddress = 'bob@campfire.waitoru.org';
-                    const mobileNumber = '0202 555 1234';
-                    const givenName = 'bob';
-                    const familyName = 'campfire';
+                    const emailAddress = document.getElementById('226531911').value;
+                    const mobileNumber = document.getElementById('565532832').value;
+                    const givenName = document.getElementById('855473300').value;
+                    const familyName = document.getElementById('2122144929').value;
                     console.log('Endpoint URL: ', subscription.endpoint);
                     const data = `entry.1775364902=${endpointUrl}&entry.226531911=${emailAddress}&entry.565532832=${mobileNumber}&entry.855473300=${givenName}&entry.2122144929=${familyName}&submit=Submit`;
-                    subscribe('1FAIpQLSfrpnyb-4yVPSTCfafM88g4g3dn1fv710VKm3575f3zBGH6GA', data);
-
+                    const result = saveSubscription('1FAIpQLSfrpnyb-4yVPSTCfafM88g4g3dn1fv710VKm3575f3zBGH6GA', data);
+                    if (result != 'OK') {
+                        //alert(result);
+                    }
                 }).catch(e => {
                     if (Notification.permission === 'denied') {
                         console.warn('Permission for notifications was denied');
@@ -110,17 +109,15 @@ cache: always
         var base64 = (base64String + padding)
             .replace(/\-/g, '+')
             .replace(/_/g, '/');
-
         var rawData = window.atob(base64);
         var outputArray = new Uint8Array(rawData.length);
-
         for (var i = 0; i < rawData.length; ++i) {
             outputArray[i] = rawData.charCodeAt(i);
         }
         return outputArray;
     }
 
-    async function subscribe(id, data) {
+    async function saveSubscription(id, data) {
         var url = `https://docs.google.com/forms/d/e/${id}/formResponse?${data}`;
         await fetch(
             url,
@@ -135,10 +132,12 @@ cache: always
             }
         )
         .then(data => {
-            console.log('Success:', data);
+            console.log('Subscription Saved');
+            return 'OK';
         })
         .catch(error => {
-            console.error('Error:', error);
+            console.error('Subscription Save Error:', error);
+            return 'Error';
         });
     }
 </script>
