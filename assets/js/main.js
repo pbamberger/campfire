@@ -61,6 +61,13 @@ function tagClick(tag) {
   }
 }
 
+function yearClick(year) {
+  if (window.location.pathname.slice(-5) === 'years') {
+    window.location.hash = year;
+    window.location.reload();
+  }
+}
+
 window.addEventListener("load", () => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js')

@@ -15,27 +15,9 @@ pwa:
   cacheVersion: 2
 
 plugins:
-  - jekyll-archives
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-
-# Archives
-jekyll-archives:
-  enabled:
-#    - categories
-#    - tags
-    - year
-    - month
-  layout: archive
-  permalinks:
-#    category: '/category/:name/'
-#    tag: '/tag/:name/'
-    year: '/year/:year/'
-    month: '/month/:year/:month/'
-    
-#tag_page_layout: tag
-#tag_page_dir: tag
 
 # Pagination 
 paginate: 12

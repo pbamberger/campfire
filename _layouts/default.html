@@ -191,7 +191,19 @@
                                 <a class="nav-link tag-reload" href="{{site.baseurl}}/tags#{{ tagName }}" onclick="tagClick('{{ tagName }}');">#{{ tagName }} <sup>{{ tagSize }}</sup></a>
                             </li>
                         {% endfor %}
-                        </ul>
+                            <li class="navbar-nav">
+                                <a class="nav-link" href="{{ site.baseurl }}/years"><b>Years</b></a>
+                            </li>
+                        {% for post in site.posts %}
+                            {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+                            {% if year != prev_year %}
+                            <li class="navbar-nav">
+                                <a class="nav-link tag-reload" href="{{site.baseurl}}/years#{{ year }}" onclick="yearClick('{{ year }}');">{{ year }}</a>
+                            </li>
+                            {% endif %}
+                            {% assign prev_year = year %}
+                        {% endfor %}
+                    </ul>
                     </div>
                 </div>
                 <div class="row">
