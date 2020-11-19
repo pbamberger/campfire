@@ -32,7 +32,7 @@ e.g.
             <span class="post-date">20 Sep 2020</span>
         </span>
         <span class="post-read-more" style="border: red dashed 2px; border-radius: 60% 40% 60% 40%; padding: 10px 25px 20px 10px;">
-            <button class="btn btn-lg save" onclick="addToCache( [ '/menu-planning-sheet/' ]); addToResourceCache([ '/assets/images/uppernorthislandoffice/menu-planning-sheet.webp' ]); this.hidden=true;" title="Save to my Cookbook"></button>
+            <button class="btn btn-lg save" title="Save to my Cookbook"></button>
         </span>
     </div>
 </div>

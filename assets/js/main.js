@@ -1,17 +1,14 @@
 ---
 ---
-/* service worker */
 
 async function addToCache(urls) {
   const cache = await window.caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
   await cache.addAll(urls);
-  await updateCookbookCount();
 }
 
 async function addToResourceCache(urls) {
   const cache = await window.caches.open('resource-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
   await cache.addAll(urls);
-  await updateCookbookCount();
 }
 
 async function removeFromCache(url) {
@@ -34,6 +31,15 @@ async function updateCookbookCount() {
     });
   });
 }
+
+async function addToCookbook(e, pageUrl, imageUrl) {
+  addToCache([ pageUrl ]);
+  addToResourceCache([ imageUrl ]);
+  await updateCookbookCount();
+  e.classList.remove('save');
+  e.classList.add('saved');
+}
+
 
 function updateActiveMenu() {
   if (window.location.pathname.slice(-10) === 'categories') {

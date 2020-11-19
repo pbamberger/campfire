@@ -54,7 +54,7 @@ post_class: post-template
                     </span>
                     {% if page.cache != "always" %}
                     <span class="post-read-more">
-                        <button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); addToResourceCache([ '{{ page_image }}' ]); this.hidden=true;" title="Save to my Cookbook" />
+                        <button class="btn btn-lg save" onclick="addToCookbook(this, '{{ site.baseurl }}{{ post.url }}', '{{ page_image }}');" title="Save to my Cookbook" />
                     </span>
                     {% endif %}
 
