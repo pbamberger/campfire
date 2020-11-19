@@ -40,6 +40,24 @@ async function addToCookbook(e, pageUrl, imageUrl) {
   e.classList.add('saved');
 }
 
+async function markSavedPosts() {
+  const results = [];
+  const cache = await caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
+  for (const request of await cache.keys()) {
+    const match = request.url.match(/\/\/(.*?)\/(.*)/);
+    if (match) {
+      const path = match[2];
+      results.push('/' + path);
+    }
+  }
+  let posts = document.querySelectorAll('.save');
+  for (i = 0; i < posts.length; ++i) {
+    if (results.includes(posts[i].dataset.href)) {
+      posts[i].classList.remove('save');
+      posts[i].classList.add('saved');
+    }
+  }
+}
 
 function updateActiveMenu() {
   if (window.location.pathname.slice(-10) === 'categories') {
@@ -94,6 +112,7 @@ window.addEventListener("load", () => {
     //     alert('no pushes')
     //   }
     // });
+    markSavedPosts();
   }
   else {
     alert('no cookbook or pushes')
