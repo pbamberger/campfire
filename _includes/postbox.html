@@ -49,7 +49,7 @@
                     <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>
                 <span class="post-read-more">
-                    <button class="btn btn-lg save" onclick="addToCookbook(this, '{{ site.baseurl }}{{ post.url }}', '{{ page_image }}');" title="Save to my Cookbook" />
+                    <button class="btn btn-lg save" onclick="addToCookbook(this, '{{ site.baseurl }}{{ post.url }}', '{{ page_image }}');" title="Save to my Cookbook" data-href="{{ site.baseurl }}{{ post.url }}" />
                 </span>
                 <div class="clearfix"></div>
             </div>
