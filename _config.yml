@@ -7,7 +7,6 @@ logo: 'assets/images/logo.webp'
 name: "Campfire"
 permalink: /:title/
 title: "Campfire recipe box"
-#disqus: 'demowebsite'
 #mailchimp-list: 'https://xxxx.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
 
 pwa:

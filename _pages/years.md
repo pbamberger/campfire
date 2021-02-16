@@ -2,26 +2,29 @@
 layout: default
 title: Years
 permalink: /years
-cache: always
 ---
 
 {% for post in site.posts %}
-{% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
-{% capture month %}{{ post.date | date: "%B" }}{% endcapture %}
-{% if year != prev_year or month != prev_month %}
-{% if forloop.first %} {% else %}</ul></div>{% endif %}
-{% assign prev_month = '' %}
-{% if year != prev_year %}
+    {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% if year != prev_year or month != prev_month %}
+        {% if forloop.first %}
+        {% else %}
+    </ul>
+</div>
+        {% endif %}
+        {% assign prev_month = '' %}
+        {% if year != prev_year %}
 <div class="row listrecent">
-{% else %}
+        {% else %}
 <div id="{{ year }}" class="row listrecent">
-{% endif %}
-<div class="section-title col-md-12 mt-4"><h2 class="text-capitalize"><span>{{ year }} {{ month }}</span></h2></div>
-<ul>
-{% endif %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% assign prev_year = year %}
-{% assign prev_month = month %}
+        {% endif %}
+    <div class="section-title col-md-12 mt-4"><h2 class="text-capitalize"><span>{{ year }} {{ month }}</span></h2></div>
+    <ul>
+    {% endif %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% assign prev_year = year %}
+    {% assign prev_month = month %}
 {% endfor %}
 
 <script>

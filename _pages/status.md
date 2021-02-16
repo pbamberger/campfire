@@ -2,7 +2,6 @@
 layout: page
 title: Status
 permalink: /status
-comments: false
 cache: always
 ---
 

@@ -2,7 +2,6 @@
 layout: page
 title: Notify
 permalink: /notify
-comments: false
 ---
 
 ### Subscribe
@@ -19,7 +18,6 @@ _These fields are all optional_
 <div class="form-group"><label for="565532832">Mobile Number</label><input name="mobileNumber" id="565532832" type="text" maxlength=20 class="form-control"/></div>
 
 <button onclick="subscribeUser();">subscribe to site updates</button>
-
 
 <br />
 

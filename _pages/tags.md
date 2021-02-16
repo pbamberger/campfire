@@ -7,21 +7,21 @@ cache: always
 
 {% for tag in site.tags %}
 <div id="{{ tag[0] | replace: ' ','-' }}" class="row listrecent collapse">
-<div class="section-title col-md-12 mt-4"><h2><span>#{{ tag[0] }}</span></h2></div>
-{% assign pages_list = tag[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-{% include postbox.html %}
-{% endif %}
-{% endif %}
-{% endfor %}
-{% assign pages_list = nil %}
-{% assign group = nil %}
+    <div class="section-title col-md-12 mt-4"><h2><span>#{{ tag[0] }}</span></h2></div>
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list %}
+        {% if post.title != null %}
+            {% if group == null or group == post.group %}
+                {% include postbox.html %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
 </div>
 {% endfor %}
 
-<script>
+<script>     
     async function renderCurrentKeyTag() {
         var tag = window.location.hash;
         if (tag.length > 0) {

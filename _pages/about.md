@@ -2,7 +2,6 @@
 layout: page
 title: About Campfire
 permalink: /about
-comments: false
 cache: always
 ---
 
