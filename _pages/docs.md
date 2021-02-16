@@ -2,7 +2,6 @@
 layout: page
 title: How to update this site
 permalink: /docs
-comments: false
 ---
 
 ## How to add or edit a page

@@ -1,43 +1,43 @@
 {% assign author_key = post.author | downcase %}
 {% assign author = site.data.authors[author_key] %}
 {% if post.image contains "://" %}
-{% capture page_image %}{{ post.image }}{% endcapture %}
+    {% capture page_image %}{{ post.image }}{% endcapture %}
 {% else  %}
-{% capture page_image %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ post.image }}{% endcapture %}
+    {% capture page_image %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ post.image }}{% endcapture %}
 {% endif %}
 <div class="col-lg-4 col-md-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
             <a href="{{ site.baseurl }}{{ post.url }}">
-            {% if post.image %}
+{% if post.image %}
                 <img class="img-fluid" loading="lazy" src="{{ page_image }}" alt="{{ post.title }}"> 
-            {% endif %}
+{% endif %}
             </a>
         </div>
         <div class="card-body">
             <h2 class="card-title">
                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                {% if post.rating %}
+{% if post.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">{% include star_rating_postbox.html %}</div>
-                {% endif %}
+{% endif %}
             </h2>
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
-                {% if post.author %}
-                    {% if author.web %}
-                        {% capture author_web %}{{ author.web }}{% endcapture %}
-                    {% else  %}
-                        {% capture author_web %}{{ site.baseurl }}/authors#{{ author.id }}{% endcapture %}
-                    {% endif %}
+{% if post.author %}
+    {% if author.web %}
+        {% capture author_web %}{{ author.web }}{% endcapture %}
+    {% else  %}
+        {% capture author_web %}{{ site.baseurl }}/authors#{{ author.id }}{% endcapture %}
+    {% endif %}
                 <span class="meta-footer-thumb">
                     <a href="{{ author_web }}">
-                    {% if author.avatar %}
+    {% if author.avatar %}
                         <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}" />
-                    {% else %}
+    {% else %}
                         <img class="author-thumb" src="{{site.baseurl}}/assets/images/{{ author_key }}/avatar.webp" alt="{{ author.name }}" />                
-                    {% endif %}
+    {% endif %}
                     </a>
                 </span>
                 <span class="author-meta">
@@ -45,7 +45,7 @@
                         <a href="{{ author_web }}">{{ author.name }}</a>
                     </span>
                     <br/>
-                {% endif %}
+{% endif %}
                     <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>
                 <span class="post-read-more">

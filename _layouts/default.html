@@ -31,7 +31,6 @@
 {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-
 <body class="{{layout}}">
     {% comment %} Defer loading of font and font awesome {% endcomment %}
     <noscript id="deferred-styles">
@@ -209,7 +208,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 text-center text-sm-center">
                         <br/>
-                        Copyright © 1908 - 2020 Scouts New Zealand.
+                        Copyright © 1908 - 2021 Scouts New Zealand.
                     </div>
                 </div>
             </div>
@@ -224,12 +223,5 @@
     <script src="{{ site.baseurl }}/assets/js/main.js"></script>
     <script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
     <script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
-
-    {% if page.layout == 'post' %}
-    {% if site.disqus %}
-    <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-    {% endif %}
-    {% endif %}
-
 </body>
 </html>
