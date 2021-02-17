@@ -15,8 +15,11 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <image>
-          <url>{{ post.image | prepend: site.baseurl | prepend: site.liveurl }}</url>
-          <title>{{ site.description | xml_escape }}</title>
+          {% if post.image contains "://" %}
+            <url>{{ post.image }}</url>
+          {% else  %}
+            <url>{{ site.baseurl }}/assets/images/{{author_key}}/{{ post.image }}</url>
+          {% endif %}
         </image>
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
