@@ -15,7 +15,7 @@ One of those camp things! Tastes great, simple to make, looks weird :-/
 ## Ingredients
 
 * 50 g butter
-* 600 ml [chicken stock](/chicken-broth/)
+* 600 ml [chicken stock](/kahu-chicken-broth/)
 * 1 tablespoon cornflour
 * 2 egg yolks
 * 1 eating apple, finely chopped

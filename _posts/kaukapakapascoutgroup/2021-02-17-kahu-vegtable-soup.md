@@ -14,7 +14,7 @@ The great winter lunch classic, or are you having a three course dinner?
 
 ## Ingredients
 
-* 4 l [basic soup stock](/basic-soup-stock/)
+* 4 l [basic soup stock](/kahu-basic-soup-stock/)
 * 1 medium parsnip
 * 1 turnip
 * 2 stalks of celery

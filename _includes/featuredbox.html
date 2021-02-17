@@ -12,7 +12,9 @@
                 <div class="h-100">
                     <div class="wrapthumbnail">
                         <a href="{{ site.baseurl }}{{ post.url }}">
-                            <img class="featured-box-img-cover" loading="lazy" src="{{ page_image }}" alt="{{ post.title }}" />
+                            {% if post.image %}
+                                <img class="featured-box-img-cover" loading="lazy" src="{{ page_image }}" alt="{{ post.title }}" />
+                            {% endif %}
                         </a>
                     </div>
                 </div>
