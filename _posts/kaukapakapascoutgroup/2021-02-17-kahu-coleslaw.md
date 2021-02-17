@@ -14,11 +14,11 @@ A hearty salad, ideal for serving with a BBQ
 
 ## Ingredients
 
-* 1/4 large cabbage
+* ¼ large cabbage
 * 2 carrots
 * 1 large stick celery
 * 1 onions
-* 125mls mayonnaise
+* 125 ml mayonnaise
 
 ## Method
 

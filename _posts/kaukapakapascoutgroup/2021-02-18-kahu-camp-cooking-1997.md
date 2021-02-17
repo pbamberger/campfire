@@ -43,9 +43,9 @@ An especially important part of camp is snack food. Mid-morning and mid-afternoo
 
 Beware of high food prices. It is important to provide a well balanced meal without a high price tag _[to keep Scouting inclusive to all]_
 
-A balanced diet is a diet that gives the body all the food materials it needs in the right amounts. About 2/3rds of the diet should be carbohydrates, 1/6th fats and 1/6th proteins. The diet should also contain the proper minerals and vitamins that the body needs. Food experts have divided all the foods we need to keep healthy into four basic food groups; They are the MILK, MEAT, BREAD-CEREAL, and the VEGETABLE group
+A balanced diet is a diet that gives the body all the food materials it needs in the right amounts. About 2/3rds of the diet should be carbohydrates, 1/6th fats and 1/6th proteins. The diet should also contain the proper minerals and vitamins that the body needs. Food experts have divided all the foods we need to keep healthy into four basic food groups; they are the MILK, MEAT, BREAD-CEREAL, and the VEGETABLE group
 
-* MILK - milk, butter, cheese, ice-cream, yoghurt
+* MILK - milk, butter, cheese, icecream, yoghurt
 * MEAT - red meats, chicken, fish, eggs, beans, peas, nuts
 * BREAD-CEREAL - breads, cereals, pasta, rice, potatoes, taro
 * VEGETABLES - greens, carrots, fruit, beets, pumpkin
@@ -69,10 +69,10 @@ Practice cooking at home on the stove to get to know the cooking times for diffe
 * Dice - cut into small cubes
 * Garnish - to decorate or accompany a particular dish
 * Reduce - to evaporate by rapid boiling
-* Roux -  made by blending equal amounts of flour and butter over a low heat ( base for white sauces)
+* Roux - made by blending equal amounts of flour and butter over a low heat ( base for white sauces)
 * Sauté - cook in fat over moderate heat
 * Sear - to quickly fry the outside, usually of meat
-* Season - to add salt and pepper etc
+* Season - to add salt and pepper etc.
 * Steam - to cook so that food does not touch the water
 * Skim - to take of fat or scum from the top of liquid with a spoon
 * Stock - the liquor from simmered meat bones or meat. (or that made up from prepared stock mixes)
@@ -88,14 +88,14 @@ The capacity of metric spoons and cups and the volume of their contents is measu
 * 1 teaspoon = 5 ml
 * 2 teaspoons = 1 dessert spoon (10 ml)
 * 3 teaspoons = 1 tablespoon _[NZ, UK, and USA]_ (15 ml)
-* 4 teaspoons =  1 tablespoon _[Australia]_ (20 ml)
+* 4 teaspoons = 1 tablespoon _[Australia]_ (20 ml)
 * 16 tablespoons = 1 cup _[NZ, UK, and USA]_ (~250 ml)
 
 **Everyday Equivalents**
 
 * Butter - 1 cup = 250 g, 1 tablespoon = 15 g
 * Flour - 2 cups = 250 g, 2 tablespoons = 15 g
-* Sugar -  1 cup = 250 g, 1 tablespoon = 15 g
+* Sugar - 1 cup = 250 g, 1 tablespoon = 15 g
 
 **USA recipe conversions**
 
@@ -158,7 +158,7 @@ The capacity of metric spoons and cups and the volume of their contents is measu
 * onions - 30 g per meal 
 * beetroot - 120 g per meal
 * cabbage - 180 g per meal
-* cauliflower  - 120 g per meal
+* cauliflower - 120 g per meal
 * pumpkin - 120 g per meal
 * lettuce - 1 large per 6
 * tomato - 500 g per meal per 6

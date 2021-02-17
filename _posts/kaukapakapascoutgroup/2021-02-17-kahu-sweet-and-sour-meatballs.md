@@ -31,7 +31,7 @@ An European-Asian fusion dish, intense flavours, and always popular
 
 Finely chop 1 onion and add to mince. Sprinkle beef stock powder over the mince, and mix well
 
-Make into meat balls the size of golf balls
+Make into meatballs the size of golf balls
 
 Place oil into frying pan, or on the grill plate, and cook meatballs until done
 
@@ -41,12 +41,12 @@ Slice 2 onions, carrots, and celery
 
 Sauté in a frying pan lightly with a little oil or butter
 
-Add pineapple pieces and it's juice, dissolved sweet and sour mix (use a little water), soya sauce, and vinegar
+Add pineapple pieces and its juice, dissolved sweet and sour mix (use a little water), soya sauce, and vinegar
 
 Cook over a low flame until vegetables are just starting to be cooked
 
 Mix flour with a little water into a creamy paste and slowly add. Simmer until thickened, 10 minutes
 
-Take care not to over-cook vegetables, they should be still slightly crisp
+Take care not to over-cook vegetables; they should be still slightly crisp
 
 Serve meatballs on cooked rice, and pour over sauce

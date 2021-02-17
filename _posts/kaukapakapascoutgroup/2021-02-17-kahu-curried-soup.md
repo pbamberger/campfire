@@ -22,7 +22,7 @@ One of those camp things! Tastes great, simple to make, looks weird :-/
 * 2 large onions, finely chopped
 * 1 tablespoon curry powder
 * 250 ml cream
-* juice of 1/2 a lemon
+* juice of ½ a lemon
 * 25 ml cold water
 
 ## Method

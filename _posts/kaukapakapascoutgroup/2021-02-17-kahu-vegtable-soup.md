@@ -10,7 +10,7 @@ hidden: false
 rating: 5
 ---
 
-The great winter lunch classic, or are you having a three course dinner?
+The great winter lunch classic, or are you having a three-course dinner?
 
 ## Ingredients
 
@@ -20,12 +20,12 @@ The great winter lunch classic, or are you having a three course dinner?
 * 2 stalks of celery
 * 2 carrots
 * 2 onions
-* 1/4 cauliflower
+* ¼ cauliflower
 * 1 tablespoon rice
 
 ## Method
 
-To basic soup stock add assorted vegetables grated or chopped finely
+To basic soup stock, add assorted vegetables grated or chopped finely
 
 Bring to the boil and simmer gently until tender (1 hour)
 

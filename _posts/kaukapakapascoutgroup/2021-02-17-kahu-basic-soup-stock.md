@@ -20,7 +20,7 @@ Stock is the basis for a good soup, it is the liquid in which meat, bones, or ve
 
 ## Method
 
-About 1.2 l of water should be used for every 500 g of meat, bones, vegetables
+About 1.2 l of water should be used for every 500 g of meat, bones, and vegetables
 
 Let it gently simmer for 2 to 3 hours
 

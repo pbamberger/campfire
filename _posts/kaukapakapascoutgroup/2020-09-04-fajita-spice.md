@@ -47,7 +47,7 @@ Use a hot BBQ grill. Pour some oil on the cooking surfaces of the Chicken, and p
 
 You can also use an oven, around 200°C, turn every 5 minutes. This takes about 20 minutes to reach the required temperature
 
-When cooked, remove from heat immediately, and let them rest on a cutting board for 5 to 10 minutes. covering them loosely with a piece aluminium foil while resting
+When cooked, remove from heat immediately, and let them rest on a cutting board for 5 to 10 minutes. Cover them loosely with a piece aluminium foil while resting
 
 When rested, slice the Chicken across the grain so you have short strips to wrap in a tortilla
 

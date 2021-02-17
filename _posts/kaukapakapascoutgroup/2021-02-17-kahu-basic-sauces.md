@@ -35,7 +35,7 @@ Allow to simmer for a few minutes until rich and creamy
 
 **Egg Sauce**
 
-Add two hard boiled eggs that have been diced up
+Add two hard-boiled eggs that have been diced up
 
 **Cheese Sauce (Mornay)**
 

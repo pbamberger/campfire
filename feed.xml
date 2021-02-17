@@ -14,14 +14,14 @@ layout: null
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <image>
+        <description>
           {% if post.image contains "://" %}
-            <url>{{ post.image }}</url>
+            <img src="{{ post.image }}" alt="{{ page.title }}">
           {% else  %}
-            <url>{{ site.baseurl | prepend: site.liveurl }}/assets/images/{{author_key}}/{{ post.image }}</url>
+            <img src="{{ site.baseurl | prepend: site.liveurl }}/assets/images/{{author_key}}/{{ post.image }}" alt="{{ page.title }}">
           {% endif %}
-        </image>
-        <description>{{ post.content | xml_escape }}</description>
+          {{ post.content | xml_escape }}
+        </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.liveurl }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.liveurl }}</guid>
