@@ -21,7 +21,7 @@ A famous breakfast treat, crap open and scoop out onto hot buttered toast. Or se
 
 Lower the required number of eggs into gently boiling water just deep enough to cover them
 
-Time cooking from when the water re-boiled after eggs are added
+Time cooking from when the water re-boiled after the eggs where added
 
 * soft - 2:30 to 3:00
 * medium - 4:30 to 5:00

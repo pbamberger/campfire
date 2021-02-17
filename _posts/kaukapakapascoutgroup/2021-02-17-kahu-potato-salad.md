@@ -38,4 +38,4 @@ Add fresh chopped chives or parsley for extra colour of flavour
 
 ---
 
-Potato salas is a classic German dish. In Germany you would often add diced cooked bacon, chopped parsley, and a good splash of vinegar to the dressing_
+Potato salas is a classic German dish. In Germany, you would often add diced cooked bacon, chopped parsley, and a good splash of vinegar to the dressing_

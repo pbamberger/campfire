@@ -16,7 +16,7 @@ All the Scouts from [Kaukapakapa Scout Group](/authors#12042) rave about this, a
 
 * l medium pumpkin
 * 2 large onions
-* ~1/2 l milk
+* ~½ l milk
 * 200 g grated cheese
 * 3 teaspoons sugar
 * 2 tablespoons butter

@@ -23,7 +23,7 @@ Half fill a billy or deep fry pan with water and bring to a boil
 
 Carefully break one or two eggs per person into the boiling water
 
-Put the lid on and remove from fire and let stand for about 4 minutes, or longer if hard eggs are wanted
+Put the lid on and remove from fire and let stand for about 4 minutes or longer if hard eggs are wanted
 
 Use a long handled slotted spoon to gentle lift the eggs out of he water, let them water drain for a moment before serving
 

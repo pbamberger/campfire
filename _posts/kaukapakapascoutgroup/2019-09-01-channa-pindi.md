@@ -27,7 +27,7 @@ Can be cooked on a gas hob, or open fire embers
 * 500 g chopped tomatoes, or 2 cans of chopped tomatoes in juice
 * 50 g chopped parsley or coriander (stalk and all), any combination (½ bunch)
 * 5 g chopped fresh mint (optional)
-* 50 ml lemon or lime juice, any combination (1 lemon, 1½  limes)
+* 50 ml lemon or lime juice, any combination (1 lemon, 1½ limes)
 
 ## Method
 

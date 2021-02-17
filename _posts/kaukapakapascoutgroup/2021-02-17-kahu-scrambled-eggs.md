@@ -24,7 +24,7 @@ Break 2 eggs per person into a cup, and from there into a large bowl. Beat eggs 
 
 Melt butter in a pan, and add egg mixture stirring continuously until mixture sets
 
-Stop stirring as it starts to set and lower temperature if a solid block is desired
+Stop stirring as it starts to set, and lower temperature if a solid block is desired
 
 Serve on hot buttered toast
 

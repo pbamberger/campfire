@@ -26,7 +26,7 @@ A classic camp dish, make it as spicy as your patrol likes
 
 ## Method
 
-Brown mince and onions and curry powder in butter in a frying pan
+Brown mince, onions, and curry powder in butter in a frying pan
 
 Transfer to a large pot. Mix stock powder with a little water, add rest of water and mixed vegetables to pot
 
