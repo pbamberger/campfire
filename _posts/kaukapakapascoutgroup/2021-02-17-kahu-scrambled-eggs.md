@@ -2,9 +2,9 @@
 layout: post
 title:  "Scrambled Eggs"
 author: kaukapakapascoutgroup
-categories: [ recipe ]
+categories: [ recipes ]
 tags: [ kahu-camp-cooking, egg ]
-image: scrambled-eggs.webp
+image: kahu-scrambled-eggs.webp
 featured: false
 hidden: false
 rating: 5

@@ -4,7 +4,7 @@ title:  "Camp Cooking 1997"
 author: kaukapakapascoutgroup
 categories: [ techniques ]
 tags: [ kahu-camp-cooking, history, menu ]
-image: camp-cooking-1997.webp
+image: kahu-camp-cooking-1997.webp
 featured: true
 hidden: false
 rating: 5
@@ -175,7 +175,7 @@ The capacity of metric spoons and cups and the volume of their contents is measu
 
 {% assign sortedPosts = site.tags["kahu-camp-cooking"] | sort: 'title' %}
 {% for post in sortedPosts %}
-    {% if post.title != null and post.url != "/camp-cooking-1997/" %}
+    {% if post.title != null and post.url != "/kahu-camp-cooking-1997/" %}
 <li>
     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{% if post.featured == true %} *{% endif %}</a>
 </li>

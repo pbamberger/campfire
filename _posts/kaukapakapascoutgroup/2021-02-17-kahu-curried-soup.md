@@ -2,9 +2,9 @@
 layout: post
 title:  "Curried Soup"
 author: kaukapakapascoutgroup
-categories: [ recipe ]
+categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]
-image: curried-soup.webp
+image: kahu-curried-soup.webp
 featured: false
 hidden: false
 rating: 5

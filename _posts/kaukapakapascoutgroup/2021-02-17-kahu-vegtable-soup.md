@@ -2,9 +2,9 @@
 layout: post
 title:  "Vegetable Soup"
 author: kaukapakapascoutgroup
-categories: [ recipe ]
+categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]
-image: vegtable-soup.webp
+image: kahu-vegtable-soup.webp
 featured: false
 hidden: false
 rating: 5

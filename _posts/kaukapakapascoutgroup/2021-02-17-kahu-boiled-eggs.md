@@ -2,9 +2,9 @@
 layout: post
 title:  "Boiled Eggs"
 author: kaukapakapascoutgroup
-categories: [ recipe ]
+categories: [ recipes ]
 tags: [ kahu-camp-cooking, egg ]
-image: boiled-eggs.webp
+image: kahu-boiled-eggs.webp
 featured: false
 hidden: false
 rating: 5
