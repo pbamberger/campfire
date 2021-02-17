@@ -5,131 +5,131 @@ post_class: post-template
 ---
 
 {% comment %} Begin Article {% endcomment %} 
-<div class="container">
-    <div class="row">
-        {% comment %} Post {% endcomment %}
-        {% assign author_key = page.author | downcase %}
-        {% assign author = site.data.authors[author_key] %}
-        {% if page.image contains "://" %}
-            {% capture page_image %}{{ page.image }}{% endcapture %}
-        {% else  %}
-            {% capture page_image %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ page.image }}{% endcapture %}
-        {% endif %}
-        <div class="col-md-12 flex-first flex-md-unordered">
-            <div class="mainheading">
-                <h1 class="posttitle">{{ page.title }}</h1>
-            </div>
-            {% comment %} Adsense if enabled from _config.yml (change your pub id and slot) {% endcomment %}
-            {% if site.adsense == "enabled" %}
-                {% include adsense-under-header.html %}
-            {% endif %}
-            {% comment %} End Adsense {% endcomment %}
-            {% comment %} Post Featured Image {% endcomment %}
-            <img class="featured-image img-fluid" loading="lazy" src="{{ page_image }}" alt="{{ page.title }}">
-            {% comment %} End Featured Image {% endcomment %}
-            {% if page.author %}
-            <div class="row post-top-meta">
-                <div class="col-xs-4 col-md-6 col-lg-6 text-center text-md-left">
-                    {% if page.author %}
-                    {% if author.web %}
-                        {% capture author_web %}{{ author.web }}{% endcapture %}
-                    {% else  %}
-                        {% capture author_web %}{{ site.baseurl }}/authors#{{ author.id }}{% endcapture %}
-                    {% endif %}
-                    <span class="meta-footer-thumb">
-                        <a href="{{ author_web }}">
-                        {% if author.avatar %}
-                            <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}" />
-                        {% else %}
-                            <img class="author-thumb" src="{{site.baseurl}}/assets/images/{{ author_key }}/avatar.webp" alt="{{ author.name }}" />                
-                        {% endif %}
-                        </a>
-                    </span>
-                    <span class="author-meta">
-                        <span class="post-name"><a href="{{ author_web }}"><span class="post-author">{{ author.name }}</span></a></span>
-                        <br/>
-                    {% endif %}
-                        <span class="post-date">{{ page.date | date_to_string }}</span>
-                    </span>
-                    {% if page.cache != "always" %}
-                    <span class="post-read-more">
-                        <button class="btn btn-lg save" onclick="addToCookbook(this, '{{ site.baseurl }}{{ post.url }}', '{{ page_image }}');" title="Save to my Cookbook" data-href="{{ site.baseurl }}{{ post.url }}" />
-                    </span>
-                    {% endif %}
+{% comment %} Post {% endcomment %}
+{% assign author_key = page.author | downcase %}
+{% assign author = site.data.authors[author_key] %}
+{% if page.image contains "://" %}
+    {% capture page_image %}{{ page.image }}{% endcapture %}
+{% else  %}
+    {% capture page_image %}{{ site.baseurl }}/assets/images/{{author_key}}/{{ page.image }}{% endcapture %}
+{% endif %}
+<div class="section-title">
+    <h2>
+        <span>{{ page.title }}</span>
+    </h2>
+</div>
+{% comment %} Adsense if enabled from _config.yml (change your pub id and slot) {% endcomment %}
+{% if site.adsense == "enabled" %}
+    {% include adsense-under-header.html %}
+{% endif %}
+{% comment %} End Adsense {% endcomment %}
+{% comment %} Post Featured Image {% endcomment %}
 
-                </div>
-            </div>
+{% if page.image %}
+    <img class="featured-image img-fluid" loading="lazy" src="{{ page_image }}" alt="{{ page.title }}">
+{% endif %}
+
+{% comment %} End Featured Image {% endcomment %}
+{% if page.author %}
+<div class="row post-top-meta">
+    <div class="col-xs-4 col-md-6 col-lg-6 text-center text-md-left">
+        {% if page.author %}
+        {% if author.web %}
+            {% capture author_web %}{{ author.web }}{% endcapture %}
+        {% else  %}
+            {% capture author_web %}{{ site.baseurl }}/authors#{{ author.id }}{% endcapture %}
+        {% endif %}
+        <span class="meta-footer-thumb">
+            <a href="{{ author_web }}">
+            {% if author.avatar %}
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}" />
+            {% else %}
+                <img class="author-thumb" src="{{site.baseurl}}/assets/images/{{ author_key }}/avatar.webp" alt="{{ author.name }}" />                
             {% endif %}
-            {% comment %} Post Content {% endcomment %}
-            <div class="article-post">
-                {% comment %} TOC, if {% endcomment %}
-                {% if page.toc %}
-                    {% if page.beforetoc %}
-                        <p><em>{{page.beforetoc}}</em></p>
-                    {% endif %}
-                    <div class="toc mt-4 mb-4 lead">
-                        {% comment %} removed <h3 class="font-weight-bold">Summary</h3> {% endcomment %}
-                        {% include toc.html html=content %}
-                    </div>
-                {% endif %}
-                {% comment %} End TOC {% endcomment %}
-                {{content}}
-            </div>
-            {% comment %} Post Share 
-            <div class="col-md-2 pl-0">{% include share.html %}</div>
-            {% endcomment %}
-            {% comment %} Rating {% endcomment %}
-            {% if page.rating %}
-            <div class="rating mb-4 d-flex align-items-center"><strong class="mr-1">Rating:</strong> {% include star_rating.html %}</div>
-            {% endif %}
-            {% comment %} Post Date {% endcomment %}
-            <p>
-                <small>
-                Published <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-                </small>
-            </p>
-            {% comment %} Post Categories {% endcomment %}
-            <div class="after-post-cats">
-                <ul class="tags mb-4">
-                    {% assign sortedCategories = page.categories | sort %}
-                    {% for category in sortedCategories %}
-                    <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/{{ category | replace: " ","-" }}">{{ category }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% comment %} End Categories {% endcomment %}
-            {% comment %} Post Tags {% endcomment %}
-            <div class="after-post-tags">
-                <ul class="tags">
-                    {% assign sortedTags = page.tags | sort %}
-                    {% for tag in sortedTags %}
-                    <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% comment %} End Tags {% endcomment %}
-            {% comment %} Prev/Next {% endcomment %}
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            {% if page.previous.url %}
-                <a class="prev d-block col-md-6" href="{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
-            {% endif %}
-            {% if page.next.url %}
-                <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo; </a>
-            {% endif %}
-                <div class="clearfix"></div>
-            </div>
-            {% comment %} End Prev/Next {% endcomment %}
-        </div>
-        {% comment %} End Content {% endcomment %}
+            </a>
+        </span>
+        <span class="author-meta">
+            <span class="post-name"><a href="{{ author_web }}"><span class="post-author">{{ author.name }}</span></a></span>
+            <br/>
+        {% endif %}
+            <span class="post-date">{{ page.date | date_to_string }}</span>
+        </span>
+        {% if page.cache != "always" %}
+        <span class="post-read-more">
+            <button class="btn btn-lg save" onclick="addToCookbook(this, '{{ site.baseurl }}{{ post.url }}', '{{ page_image }}');" title="Save to my Cookbook" data-href="{{ site.baseurl }}{{ post.url }}" />
+        </span>
+        {% endif %}
+
     </div>
 </div>
+{% endif %}
+{% comment %} Post Content {% endcomment %}
+<div class="article-post">
+    {% comment %} TOC, if {% endcomment %}
+    {% if page.toc %}
+        {% if page.beforetoc %}
+            <p><em>{{page.beforetoc}}</em></p>
+        {% endif %}
+        <div class="toc mt-4 mb-4 lead">
+            {% comment %} removed <h3 class="font-weight-bold">Summary</h3> {% endcomment %}
+            {% include toc.html html=content %}
+        </div>
+    {% endif %}
+    {% comment %} End TOC {% endcomment %}
+    {{content}}
+</div>
+{% comment %} Post Share 
+<div class="col-md-2 pl-0">{% include share.html %}</div>
+{% endcomment %}
+{% comment %} Rating {% endcomment %}
+{% if page.rating %}
+<div class="rating mb-4 d-flex align-items-center"><strong class="mr-1">Rating:</strong> {% include star_rating.html %}</div>
+{% endif %}
+{% comment %} Post Date {% endcomment %}
+<p>
+    <small>
+    Published <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></span>           
+    {% if page.last_modified_at %}
+    (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+    {% endif %}
+    </small>
+</p>
+{% comment %} Post Categories {% endcomment %}
+<div class="after-post-cats">
+    <ul class="tags mb-4">
+        {% assign sortedCategories = page.categories | sort %}
+        {% for category in sortedCategories %}
+        <li>
+            <a class="smoothscroll" href="{{site.baseurl}}/{{ category | replace: " ","-" }}">{{ category }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% comment %} End Categories {% endcomment %}
+{% comment %} Post Tags {% endcomment %}
+<div class="after-post-tags">
+    <ul class="tags">
+        {% assign sortedTags = page.tags | sort %}
+        {% for tag in sortedTags %}
+        <li>
+            <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% comment %} End Tags {% endcomment %}
+{% comment %} Prev/Next {% endcomment %}
+<div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+{% if page.previous.url %}
+    <a class="prev d-block col-md-6" href="{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+{% endif %}
+{% if page.next.url %}
+    <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo; </a>
+{% endif %}
+    <div class="clearfix"></div>
+</div>
+{% comment %} End Prev/Next {% endcomment %}
+{% comment %} End Content {% endcomment %}
 {% comment %} End Article {% endcomment %}
 {% comment %} 
 Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 

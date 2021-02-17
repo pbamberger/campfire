@@ -10,7 +10,7 @@ hidden: false
 rating: 5
 ---
 
-All Scouts from [Kaukapakapa Scout Group](/authors#12042) rave about this, and have been ruined from any other form of pumpkin soup since
+All the Scouts from [Kaukapakapa Scout Group](/authors#12042) rave about this, and have been ruined from any other form of pumpkin soup since
 
 ## Ingredients
 
