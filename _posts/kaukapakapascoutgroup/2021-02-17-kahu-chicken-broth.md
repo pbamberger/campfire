@@ -2,9 +2,9 @@
 layout: post
 title:  "Chicken Broth"
 author: kaukapakapascoutgroup
-categories: [ recipe ]
+categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]
-image: chicken-broth.webp
+image: kahu-chicken-broth.webp
 featured: false
 hidden: false
 rating: 5

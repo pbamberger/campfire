@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  " Basic Soup Stock"
+title:  "Basic Soup Stock"
 author: kaukapakapascoutgroup
-categories: [ recipe ]
+categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]
+image: kahu-basic-soup-stock.webp
 featured: false
 hidden: false
 rating: 5

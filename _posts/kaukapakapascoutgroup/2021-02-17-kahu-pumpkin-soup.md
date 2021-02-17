@@ -2,9 +2,9 @@
 layout: post
 title:  "Pumpkin Soup"
 author: kaukapakapascoutgroup
-categories: [ recipe ]
+categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]
-image: pumpkin-soup.webp
+image: kahu-pumpkin-soup.webp
 featured: false
 hidden: false
 rating: 5
