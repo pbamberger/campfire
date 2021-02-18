@@ -45,4 +45,4 @@ Serve noodles on top
 
 ---
 
-This dish without noodles, and with more vegetables variety/quantity is called a **Chop Suey**. Both these name refer to Europeanised Asian dishes
+This dish without noodles, often with more vegetables variety and/or quantity is called a **Chop Suey**. Both these names refer to europeanised Asian dishes
