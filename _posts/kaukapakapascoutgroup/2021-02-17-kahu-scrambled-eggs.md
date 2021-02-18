@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Scrambled Eggs"
+title: "Scrambled Eggs"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, egg ]

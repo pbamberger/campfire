@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Braised Sausages"
+title: "Braised Sausages"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, sausage ]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Curried Mince"
+title: "Curried Mince"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, ground-beef, rice, asian ]

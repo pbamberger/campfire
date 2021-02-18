@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Macaroni Mince"
+title: "Macaroni Mince"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, ground-beef, pasta ]

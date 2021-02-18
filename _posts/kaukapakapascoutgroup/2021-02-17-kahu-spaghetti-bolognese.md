@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spaghetti Bolognese"
+title: "Spaghetti Bolognese"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, ground-beef, pasta ]

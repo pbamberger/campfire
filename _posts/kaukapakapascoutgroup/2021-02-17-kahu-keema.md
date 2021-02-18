@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Keema"
+title: "Keema"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, ground-beef, potato, curry ]

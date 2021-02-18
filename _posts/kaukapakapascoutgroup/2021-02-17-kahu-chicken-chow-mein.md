@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chicken Chow Mein"
+title: "Chicken Chow Mein"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, chicken, noodle, asian ]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sweet and Sour Meatballs"
+title: "Sweet and Sour Meatballs"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, ground-beef, rice, asian ]

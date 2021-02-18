@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pumpkin Soup"
+title: "Pumpkin Soup"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]

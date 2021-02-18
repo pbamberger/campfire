@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Boiled Eggs"
+title: "Boiled Eggs"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, egg ]

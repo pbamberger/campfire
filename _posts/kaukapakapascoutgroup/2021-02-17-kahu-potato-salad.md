@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Potato Salad"
+title: "Potato Salad"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, potato, salad ]

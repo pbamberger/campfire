@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chicken Broth"
+title: "Chicken Broth"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]

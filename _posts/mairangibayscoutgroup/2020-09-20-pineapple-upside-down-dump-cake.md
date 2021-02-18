@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pineapple Upside Down Dump Cake"
+title: "Pineapple Upside Down Dump Cake"
 author: mairangibayscoutgroup
 categories: [ recipes ]
 tags: [ cake, pineapple, dutch-oven ]

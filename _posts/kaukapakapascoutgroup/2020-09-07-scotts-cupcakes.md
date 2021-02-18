@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Scott's Cupcakes"
+title: "Scott's Cupcakes"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ cupcake, baking ]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Vegetable Soup"
+title: "Vegetable Soup"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]
