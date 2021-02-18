@@ -111,3 +111,13 @@ There are two types of code elements which can be inserted in Markdown, the firs
 ```
 
 ![walking]({{ site.baseurl }}/assets/images/avatar.webp)
+
+¼
+½
+¾
+§
+±
+°C
+§
+²
+³
