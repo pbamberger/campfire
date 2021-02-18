@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Road-Kill Burgers"
+title: "Road-Kill Burgers"
 author: cocklebayscoutgroup
 categories: [ recipes ]
 tags: [ chickpea, ground-beef ]

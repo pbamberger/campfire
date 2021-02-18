@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coleslaw"
+title: "Coleslaw"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, cabbage, salad ]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ANZAC Biscuits"
+title: "ANZAC Biscuits"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ biscuit, baking ]

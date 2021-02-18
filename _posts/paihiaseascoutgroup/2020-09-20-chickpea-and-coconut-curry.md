@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chickpea and Coconut Curry"
+title: "Chickpea and Coconut Curry"
 author: paihiaseascoutgroup 
 categories: [ recipes ]
 tags: [ chickpea, coconut, gf, tomato, vegan, vegetarian ]

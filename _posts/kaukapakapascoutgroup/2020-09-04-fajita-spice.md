@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fajita Spice"
+title: "Fajita Spice"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ beef-steak, chicken, gf, spice ]

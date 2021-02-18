@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Curried Soup"
+title: "Curried Soup"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, soup ]

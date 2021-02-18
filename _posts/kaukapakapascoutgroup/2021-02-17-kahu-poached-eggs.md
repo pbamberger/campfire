@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Poached Eggs"
+title: "Poached Eggs"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, egg ]

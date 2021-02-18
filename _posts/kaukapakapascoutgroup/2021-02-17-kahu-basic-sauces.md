@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basic Sauces"
+title: "Basic Sauces"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, sauce ]

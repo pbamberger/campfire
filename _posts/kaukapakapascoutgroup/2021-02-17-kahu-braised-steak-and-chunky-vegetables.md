@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Braised Steak and Chunky Vegetables"
+title: "Braised Steak and Chunky Vegetables"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
-tags: [ kahu-camp-cooking, ground-beef, pasta ]
+tags: [ kahu-camp-cooking, beef, potato ]
 image: kahu-braised-steak-and-chunky-vegetables.webp
 featured: false
 hidden: false
@@ -15,19 +15,19 @@ Simple to cook, economic ingredients, and very tasty. An ideal winter camp meal
 ## Ingredients
 
 * 1 Kg braising steak (slow cook)
-* three medium onions, sliced
-* six teaspoons stock powder (or 3 cups real stock)
+* 3 medium onions, sliced
+* 6 teaspoons stock powder (or 3 cups real stock)
 * 1 tablespoon of flour
 * 1 tablespoon of oil
-* one medium cauliflower
+* 1 medium cauliflower
 * 750 g carrots
 * 1.5 kg potatoes
 
 ## Method
 
-Cut steak into medium sized pieces (2 cm³). Dust with flour
+Cut steak into medium sized pieces (2 cm), and dust with flour
 
-Heat oil in large deep frypan, or heat bottom pot. Add steak and onions. Frequently but gentry turn until all steak surfaces are brown
+Heat oil in large deep frypan, or heavy bottom pot. Add steak and onions, and frequently but gentry turn until all steak surfaces are brown
 
 Add three cups of water and stock powder or 3 cups of stock and simmer gently for 45 minutes
 

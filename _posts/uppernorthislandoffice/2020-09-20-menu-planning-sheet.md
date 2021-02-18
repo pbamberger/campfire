@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Menu Planning Sheet"
+title: "Menu Planning Sheet"
 author: uppernorthislandoffice
 categories: [ planning ]
 tags: [ menu, budget ]

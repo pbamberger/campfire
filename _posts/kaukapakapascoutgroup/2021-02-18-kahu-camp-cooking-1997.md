@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Camp Cooking 1997"
+title: "Camp Cooking 1997"
 author: kaukapakapascoutgroup
 categories: [ techniques ]
 tags: [ kahu-camp-cooking, history, menu ]

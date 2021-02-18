@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pasta"
+title: "Pasta"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ kahu-camp-cooking, pasta ]

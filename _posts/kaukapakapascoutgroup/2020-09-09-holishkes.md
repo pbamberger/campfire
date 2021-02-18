@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Holishkes"
+title: "Holishkes"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ cabbage, gf, ground-beef, jewish, rice,tomato ]

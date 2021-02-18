@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Beef Stew and Cornbread"
+title: "Beef Stew and Cornbread"
 author: uppernorthislandoffice
 categories: [ recipes ]
 tags: [ beef, cornbread, slow-cook ]

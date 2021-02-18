@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Outback Damper Bread"
+title: "Outback Damper Bread"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ bread, baking ]
