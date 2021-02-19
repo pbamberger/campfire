@@ -11,13 +11,13 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
-    {% if post.image contains "://" %}
-      {% capture page_image %}<img src="{{ post.image }}" alt="{{ post.title }}">{% endcapture %}
-    {% else  %}
-      {% capture page_image %}<img src="{{ site.baseurl | prepend: site.liveurl }}/assets/images/{{author_key}}/{{ post.image }}" alt="{{ post.title }}">{% endcapture %}
-    {% endif %}
-
+    {% for post in site.posts limit:50 %}
+      {% assign author_key = post.author | downcase %}
+      {% if post.image contains "://" %}
+        {% capture page_image %}<img src="{{ post.image }}" alt="{{ post.title }}">{% endcapture %}
+      {% else  %}
+        {% capture page_image %}<img src="{{ site.baseurl | prepend: site.liveurl }}/assets/images/{{author_key}}/{{ post.image }}" alt="{{ post.title }}">{% endcapture %}
+      {% endif %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>

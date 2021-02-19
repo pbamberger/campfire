@@ -3,7 +3,7 @@ layout: post
 title: "Basic Sauces"
 author: kaukapakapascoutgroup
 categories: [ recipes ]
-tags: [ kahu-camp-cooking, sauce ]
+tags: [ kahu-camp-cooking, sauce, cheese ]
 image: kahu-basic-sauces.webp
 featured: false
 hidden: false
