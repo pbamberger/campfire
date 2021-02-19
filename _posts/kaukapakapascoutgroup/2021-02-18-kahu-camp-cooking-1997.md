@@ -12,7 +12,7 @@ rating: 5
 
 The [Kaukapakapa Scout Group](/authors#12042) published a much loved Camp Cooking book for Scouts and Leaders. It was last compiled and printed in 1997 by Graeme Hounsell. Luckily he has lent us the last, well thumbed over copy, for ingestion into "Campfire"
 
-The tag [#kahu-camp-cooking](/tags#kahu-camp-cooking) covers the contents as replicated in "Campfire"
+This is the [Table of Contents](#table-of-contents), and the tag [#kahu-camp-cooking](/tags#kahu-camp-cooking) covers the contents as replicated into "Campfire"
 
 The Kaukapakapa Scout Group has awesome camps, and always with great or interesting food thanks to this cook book ... depending on who cooked
 

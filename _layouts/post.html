@@ -56,7 +56,7 @@ post_class: post-template
         </span>
         {% if page.cache != "always" %}
         <span class="post-read-more">
-            <button class="btn btn-lg save" onclick="addToCookbook(this, '{{ site.baseurl }}{{ post.url }}', '{{ page_image }}');" title="Save to my Cookbook" data-href="{{ site.baseurl }}{{ post.url }}" />
+            <button class="btn btn-lg save" onclick="addToCookbook(this, '{{ site.baseurl }}{{ page.url }}', '{{ page_image }}');" title="Save to my Cookbook" data-href="{{ site.baseurl }}{{ page.url }}" />
         </span>
         {% endif %}
 
