@@ -10,7 +10,7 @@ hidden: false
 rating: 5
 ---
 
-Tasty hot lunch, and a great use of leftover potatoes
+Quick and tasty hot lunch. A great way to learn how to cook on an open fire hot plate, have a shovel handy for moving the embers around as required
 
 ## Ingredients
 

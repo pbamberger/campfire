@@ -9,10 +9,10 @@ featured: true
 hidden: false
 rating: 5
 toc: true
-beforetoc: "Make 'processed' cheese, just like the 'big cheese' factories do. It's still cheese, just in a more fun form"
+beforetoc: "Can be cooked on a gas hob, or open fire embers"
 ---
 
-Can be cooked on a gas hob, or open fire embers
+Make _processed_ cheese, just like the _Big Cheese_ factories do. It's still cheese, just in a more fun form
 
 4 serves
 
