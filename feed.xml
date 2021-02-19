@@ -32,7 +32,12 @@ layout: null
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
-        <content:encoded>&lt;![CDATA[{{ page_image | xml_escape}}{{ post.content | xml_escape }}]]&gt;</content:encoded>
+        <content:encoded>
+{% raw %}<![CDATA[{% endraw %}
+{{ page_image }}
+{{ post.content }}
+{% raw %}]]>{% endraw %}
+        </content:encoded>
       </item>
     {% endfor %}
   </channel>
