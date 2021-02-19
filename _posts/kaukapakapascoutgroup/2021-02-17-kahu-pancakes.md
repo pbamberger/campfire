@@ -37,6 +37,8 @@ Tilt the pan, or use a spreading bar, to ensure even spread of mixture
 
 Lift and edge with a fish knife to check when golden, then flip it over and cooked the other side (try using the pan handle flip technique, great fun to practise)
 
-Sprinkle with sugar, lemon juice or jam, roll and serve hot
+Sprinkle with sugar, lemon juice, or jam, roll and serve hot
 
-Try savory filling like pate, left cold cuts, beans, or left over salad ... it's a soft burrito
+---
+
+Try a savory filling like pate, left-over cold cuts, beans, or left-over salad ... it's a soft burrito
