@@ -12,10 +12,9 @@ cache: always
         <h2><span>Featured Articles</span></h2>
     </div>
     <div class="row">
-    {% for post in site.posts %}
-        {% if post.featured == true %}
-            {% include featuredbox.html %}
-        {% endif %}
+    {% assign site_posts = site.posts | where_exp: "post", "post.featured == true"  %}
+    {% for post in site_posts limit: 4 %}
+        {% include featuredbox.html %}
     {% endfor %}
     </div>
 </section>

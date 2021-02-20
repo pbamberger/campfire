@@ -36,6 +36,8 @@ Step 5: Submit a PR. Then sit back and await approval and publishing
 
 ---
 
+## More Technical Stuff
+
 [Theme we used](https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/)
 
 *Questions or bug reports?*
@@ -112,12 +114,11 @@ There are two types of code elements which can be inserted in Markdown, the firs
 
 ![walking]({{ site.baseurl }}/assets/images/avatar.webp)
 
-¼
-½
-¾
-§
-±
-°C
-§
-²
-³
+¼ - quarter
+½ - half
+¾ - three quarters
+§ - section
+± - plus-minus
+°C - degrees centigrade
+² - squared
+³ - cubed

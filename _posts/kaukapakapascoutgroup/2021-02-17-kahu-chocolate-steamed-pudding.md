@@ -16,7 +16,7 @@ A classic hot pudding, and a new cooking technique to learn
 
 * 125 g flour
 * 2 teaspoons cream of tartar
-* 1/2 cup sultanas
+* ½ cup sultanas
 * 1 teaspoon baking soda
 * 1 tablespoon cocoa
 * milk to mix

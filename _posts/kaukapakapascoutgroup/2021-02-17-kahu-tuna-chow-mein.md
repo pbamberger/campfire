@@ -15,11 +15,11 @@ A tasty and quick asian style dish
 ## Ingredients
 
 * 1 tins of tuna, packed in oil
-* 1 1/2 tablespoons flour
-* 1/2 cup chopped onion
-* 1 to 1 1/2 cups stock
+* 1½ tablespoons flour
+* ½ cup chopped onion
+* 1 to 1½ cups stock
 * 1 cup sliced mushrooms
-* 1 1/2 cups diced celery
+* 1½ cups diced celery
 * 1 cup sliced water chestnuts (optional)
 * 3 TO 4 tablespoons soy sauce
 * 250 g dried noodles

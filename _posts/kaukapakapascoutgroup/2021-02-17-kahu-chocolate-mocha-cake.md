@@ -15,16 +15,16 @@ This cake may be served as a cake or as a desert. It needs preparing the day bef
 ## Ingredients
 
 * 1 tablespoon cocoa
-* 1/4 cup sugar
+* ¼ cup sugar
 * 2 eggs (separate yolks and whites)
-* 1/2 teaspoon vanilla essence
-* 1/2 teaspoon coffee essence
+* ½ teaspoon vanilla essence
+* ½ teaspoon coffee essence
 * 60g butter
 * 3 tablespoons water
-* 1/2 cup icing sugar
+* ½ cup icing sugar
 * sponge cake, day old
 * 300 ml cream, whipped
-* 1/4 cup chopped walnuts (or other nuts)
+* ¼ cup chopped walnuts (or other nuts)
 
 ## Method
 

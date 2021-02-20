@@ -48,9 +48,9 @@ Chop and put the courgette and herbs etc into bags labeled as directed and give 
 * 700 g ground beef
 * Stock cube or powder
 * 1 tbsp tomato paste
-* 1/2 a grated beetroot
-* 1/2 a grated courgette
-* 1/2 a finely chopped onion
+* ½ a grated beetroot
+* ½ a grated courgette
+* ½ a finely chopped onion
 * Thyme, chives and parsley
 * 1 can of chickpeas
 * 2 tbsp of breadcrumbs

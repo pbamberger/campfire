@@ -32,6 +32,7 @@ layout: null
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
+        <description>{{ post.excerpt | strip_html | truncatewords:100 }}</description>
         <content:encoded>
 {% raw %}<![CDATA[{% endraw %}
 {{ page_image }}

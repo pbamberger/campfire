@@ -5,7 +5,7 @@ author: mairangibayscoutgroup
 categories: [ recipes ]
 tags: [ cake, pineapple, dutch-oven ]
 image: pineapple-upside-down-dump-cake.webp
-featured: false
+featured: true
 hidden: false
 rating: 5
 ---
@@ -21,20 +21,20 @@ A favorite for desert for the Mairangi Bay Group . Adapted from the http://thedu
 * 1 can pineapple rings, reserve the syrup
 * 8 maraschino cherries (optional)
 * 120 g butter
-* 1/2 Tbs corn or wheat starch
-* 1/4 cup reserved pineapple juice
+* ½ Tbs corn or wheat starch
+* ¼ cup reserved pineapple juice
 * 1 Tbs cinnamon
 * 3 Tbs brown sugar
 * 1 pinch of salt
 * 1 box cake mix, white or yellow (about 500 g)
-* 1/2 cup of lemonade, or any simple soda
-* 1/2 cup of the reserved pineapple juice
+* ½ cup of lemonade, or any simple soda
+* ½ cup of the reserved pineapple juice
 
 ## Method
 
 Start your charcoal 15 minutes ahead. Use a 30 cm Dutch Oven, apply a coating of oil
 
-Melt 2 Tbs of the butter in the bottom of the Dutch Oven. Whisk in the corn starch and heat until bubbly. Whisk in the 1/4 cup pineapple juice and heat until thickened. Adjust corn starch until the butter juice mixture is like thick gravy. Add half the Cinnamon, Half the Brown sugar and a good shake of salt. Whisk together
+Melt 2 Tbs of the butter in the bottom of the Dutch Oven. Whisk in the corn starch and heat until bubbly. Whisk in the ¼ cup pineapple juice and heat until thickened. Adjust corn starch until the butter juice mixture is like thick gravy. Add half the Cinnamon, Half the Brown sugar and a good shake of salt. Whisk together
 
 Arrange the pineapple slices into the thicken mixture in the bottom of the Dutch Oven. Optionally place a Cherry in the center hole of each pineapple slice
 

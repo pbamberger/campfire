@@ -19,9 +19,8 @@ Make _processed_ cheese, just like the _Big Cheese_ factories do. It's still che
 ## Ingredients
 
 * 100 g grated or crumbled cheese (~1 cup)
-* 60 ml fluid (milk, water, or beer) (~1/4 cup, subtract fluid Sodium Citrate is dissolved in)
-* 4 g Sodium Citrate (~1/2 tsp)
-
+* 60 ml fluid (milk, water, or beer) (~1¼ cup, subtract fluid Sodium Citrate is dissolved in)
+* 4 g Sodium Citrate (~½ tsp)
 
 ## Method
 
@@ -39,9 +38,9 @@ This is the emulsifier; it stops the cheese oils from separating when heated. Cl
 
 While you can buy Sodium Citrate from restaurant food suppliers, it’s not common in grocery shops, so the easy way is to make it
 
-The simplest method is to use the juice of one medium lemon (44 ml) in a heatproof mixing jug. This contains about 3 g of Citric Acid. Mix in 4 g of Baking Soda (1/2 tsp). This will produce about 4 g of Sodium Citrate in a fluid form, with a nice lemon fragrance. It tastes a bit weird, but you will not notice this when it has emulsified the cheese oils
+The simplest method is to use the juice of one medium lemon (44 ml) in a heatproof mixing jug. This contains about 3 g of Citric Acid. Mix in 4 g of Baking Soda (½ tsp). This will produce about 4 g of Sodium Citrate in a fluid form, with a nice lemon fragrance. It tastes a bit weird, but you will not notice this when it has emulsified the cheese oils
 
-The other method is to dissolve 3 g of Citric Acid (1/2 tsp). You can buy Citric Acid in the spice section of the supermarket. Mix with 4 g of Baking Soda (1/2 tsp) in 10 ml of hot water
+The other method is to dissolve 3 g of Citric Acid (½ tsp). You can buy Citric Acid in the spice section of the supermarket. Mix with 4 g of Baking Soda (½ tsp) in 10 ml of hot water
 
 Caution: both methods will foam up. Briefly heat the mix until the foaming stops
 
@@ -83,7 +82,7 @@ The left and right hand sides are equal for each component, so it’s a valid re
 
 ### How much to use?
 
-Four grams of Sodium Bicarbonate (~1/2 tsp) has 602,214,129,000,000,000,000,000 molecules, or about 50,585,986,836,000,000,000,000,000 atoms. These numbers are a bit large to work with, so in chemistry we work in moles, which is a simple representation of these large numbers by using the weight divided by the Molar Mass (total atomic weight of the chemical components)
+Four grams of Sodium Bicarbonate (~½ tsp) has 602,214,129,000,000,000,000,000 molecules, or about 50,585,986,836,000,000,000,000,000 atoms. These numbers are a bit large to work with, so in chemistry we work in moles, which is a simple representation of these large numbers by using the weight divided by the Molar Mass (total atomic weight of the chemical components)
 
 What is the atomic weight? It’s the average count the atoms internal parts (protons, neutrons, and electrons)
 

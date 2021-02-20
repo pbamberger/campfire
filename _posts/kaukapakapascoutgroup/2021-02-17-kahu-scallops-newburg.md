@@ -15,10 +15,10 @@ A fancy restaurant grade dish you can make at camp
 ## Ingredients
 
 * 600g shucked scallops (or mussels, pipis, cockles etc, may be substituted)
-* 1/4 cup cream
+* ¼ cup cream
 * 2 tablespoons butter
 * 2 tablespoon cooking sherry
-* 1 1/2 teaspoons flour
+* 1½ teaspoons flour
 * 2 egg yolks
 
 ## Method
@@ -27,7 +27,7 @@ Simmer shucked shellfish in a little water for three minutes
 
 Drain, saving the liquor (cooking water)
 
-Cook shellfish slowly in butter for 5 minutes. Blend in flour and add cream and 1/4 cup of shellfish liquor
+Cook shellfish slowly in butter for 5 minutes. Blend in flour and add cream and ¼ cup of shellfish liquor
 
 Cook until thickened, stirring gently, but constantly
 
@@ -39,4 +39,4 @@ Serve on toast
 
 Other options:
 
-* Stir in 1/2 cup grated mild cheddar cheese with the cream
+* Stir in ½ cup grated mild cheddar cheese with the cream

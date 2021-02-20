@@ -16,8 +16,8 @@ A great one pot camp dinner, can be made with ground lamb too. A traditional Pak
 
 * 1 cup chopped onion
 * 3 tablespoons butter
-* 1 kg ground beef or lamb
-* 1 1/4 kg potatoes (diced)
+* 1 Kg ground beef or lamb
+* 1.25 Kg potatoes (diced)
 * 4 medium tomatoes (diced)
 * 1 small packet frozen peas
 * 1 tablespoons curry powder

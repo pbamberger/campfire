@@ -5,7 +5,7 @@ author: uppernorthislandoffice
 categories: [ recipes ]
 tags: [ beef, cornbread, slow-cook ]
 image: beef-stew-and-cornbread.webp
-featured: false
+featured: true
 hidden: false
 rating: 5
 ---

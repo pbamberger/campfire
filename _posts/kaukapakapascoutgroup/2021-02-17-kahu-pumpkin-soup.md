@@ -33,7 +33,7 @@ Place pumpkin, onion, and sugar in sufficient water to barley cover, and simmer 
 
 Strain surplus liquid into a container and mash vegetables into a puree
 
-Measure cup by cup into a pot, and add 1/2 cup of milk to each ucp of puree
+Measure cup by cup into a pot, and add ½ cup of milk to each ucp of puree
 
 Add surplus liquid to desired consistency
 

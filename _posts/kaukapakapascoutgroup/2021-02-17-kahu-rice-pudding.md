@@ -10,7 +10,7 @@ hidden: false
 rating: 5
 ---
 
-A creamy sweet mess, make everything better on a cold day
+A creamy sweet mess, makes everything better on a cold day
 
 ## Ingredients
 
