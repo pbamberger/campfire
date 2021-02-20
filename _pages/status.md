@@ -13,6 +13,8 @@ Site Title: {{site.title}}
 
 Site Description: {{site.description}}
 
+Categories: {{site.categories.size}}, Posts: {{site.posts.size}}, Tags: {{site.tags.size}}
+
 PWA Cache name: {{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}
 
 Notifications: <span id='notification'>unavailable</span>

@@ -17,7 +17,7 @@ An English favourite, we can imagine B.P. tucking into this at camp. Works well 
 * 230 g plain flour
 * I raised teaspoon baking powder
 * 125 g shredded suet (hard animal of vegetable fat), butter also works
-* 1/2 teaspoon salt
+* ½ teaspoon salt
 * cold water to mix
 * jam 
 

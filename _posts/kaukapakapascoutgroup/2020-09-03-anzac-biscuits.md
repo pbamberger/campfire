@@ -5,7 +5,7 @@ author: kaukapakapascoutgroup
 categories: [ recipes ]
 tags: [ biscuit, baking ]
 image: anzac-biscuits.webp
-featured: false
+featured: true
 hidden: false
 rating: 5
 ---

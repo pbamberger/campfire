@@ -17,7 +17,7 @@ Flip and enjoy with you favourite topping. Try something savoury too
 * 3 cups plain flour
 * 2 teaspoons baking powder
 * 3 eggs
-* 3 3/4 cups milk
+* 3¾ cups milk
 * oil or butter for the pan
 * lemon, sugar, golden syrup, jam to put on pancakes
 

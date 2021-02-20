@@ -2,6 +2,7 @@
     <h5 id="techniques">Saved Pages</h5>
     <ol id="cache-list">
     </ol>
+    <div style="clear: left;" />
 </div>
 
 <script>
@@ -20,6 +21,8 @@
                 const body = await response.text();
                 const titleMatch = body.match(/<title>(.*)\|(.*?)<\/title>/);
                 const title = (titleMatch != null) ? titleMatch[1] : request.url;
+                const imageMatch = body.match(/<img.+?src=[\"'](.+?)[\"'].*?>/);
+                const imageUrl = (imageMatch != null) ? imageMatch[1] : "";
                 const authorMatch =    body.match(/<span class="post-author">(.*)<\/span>/);
                 const author = (authorMatch != null) ? authorMatch[1] : 'none';
                 const publishedMatch = body.match(/<span class="post-date">(.*)<\/span>/);
@@ -27,6 +30,7 @@
                 results.push({
                     path,
                     title,
+                    imageUrl,
                     url: request.url,
                     author,
                     published,
@@ -38,12 +42,15 @@
             list.innerHTML = results
                 .sort((a, b) => a.title > b.title ? 1 : -1)
                 .map(res => {
-                    let html = `<li>
-                        <a href="${res.url}">${res.title}</a> 
-                        <button class="btn trash" onclick="removeFromCache('${res.url}'); renderCurrentKeys();" title="Remove this page from your cookbook"></button>
-                        <br/>
-                        <small> published by ${res.author} on ${res.published}, last visited ${res.visited.toISOString().substring(0, 10)}</small>
-                        </li>`;
+                    let html = `
+<li style="clear: left;">
+<a href="${res.url}"><img src="${res.imageUrl}" width="100" style="float: left; margin-right: 10px;" /></a>
+<div>
+    <a href="${res.url}">${res.title}</a>
+    <button class="btn trash" onclick="removeFromCache('${res.url}'); renderCurrentKeys();" title="Remove this page from your cookbook"></button>
+</div>
+<small> published by ${res.author} on ${res.published}, last visited ${res.visited.toISOString().substring(0, 10)}</small>
+</li>`;
                     return html;
                 })
                 .join('\n');

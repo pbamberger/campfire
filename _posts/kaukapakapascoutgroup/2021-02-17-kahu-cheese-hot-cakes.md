@@ -14,7 +14,7 @@ Hot lunch or afternoon snacks. Also called "drop scones"
 
 ## Ingredients
 
-* 1 1/2 cups plain flour
+* 1½ cups plain flour
 * 2 teaspoons baking powder
 * l tablespoon castor sugar
 * 1 cup milk

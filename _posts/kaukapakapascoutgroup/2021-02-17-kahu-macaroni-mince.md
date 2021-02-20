@@ -19,9 +19,9 @@ Quick, simple, and tasty. Try grated cheese on top, serve with a crisp salad
 * 1 Kg ground beef
 * 425 g (1 can) peeled tomatoes
 * 5 cups small macaroni
-* 3/4 cup tomato puree (or sauce)
+* ¾ cup tomato puree (or sauce)
 * 1 teaspoon dried oregano
-* 1/4 teaspoon sugar
+* ¼ teaspoon sugar
 * 1 cup water
 
 ## Method

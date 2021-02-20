@@ -25,7 +25,7 @@ Place the chicken with onion in a large pot
 
 Cover with water and bring to the boil, and boil for five minutes
 
-Simmer for 1 1/2 to 2 hours
+Simmer for 1½ to 2 hours
 
 Remove chicken carcass, and place on large clean platter or board
 

@@ -152,15 +152,13 @@
                                 <a class="nav-link" href="{{ site.baseurl }}/maps">Maps</a>
                             </li>
                             <li class="navbar-nav">
-                                <a class="nav-link" href="{{ site.baseurl }}/notify">Notify</a>
+                                <a class="nav-link" target="_blank" href="https://github.com/Kaukapakapa-Scout-Group/campfire/issues/">Raise an issue, update content</a>
                             </li>
                             <li class="navbar-nav">
                                 <a class="nav-link" href="{{ site.baseurl }}/status">Status</a>
                             </li>
                             <li class="navbar-nav">
-                                <a class="nav-link" target="_blank" href="https://github.com/Kaukapakapa-Scout-Group/campfire">
-                                    <i>Fork {{ site.name }} on Github</i>
-                                </a>
+                                <a class="nav-link" href="{{ site.baseurl }}/Subscribe">Subscribe</a>
                             </li>
                             <li class="navbar-nav">
                                 <a class="nav-link" href="{{ site.baseurl }}/categories"><b>Categories</b></a>
@@ -181,14 +179,15 @@
                             {% if tags_list.first[0] == null %}
                                 {% assign tagName = tag | url_escape | strip | replace: ' ', '-' %}
                                 {% assign tagSize = site.tags[tag].size %}
-                                
                             {% else %}
                                 {% assign tagName = tag[0] | url_escape | strip | replace: ' ', '-' %}
                                 {% assign tagSize = tag[1].size %}
                             {% endif %}
+                            {% if tagSize > 1 %}
                             <li class="navbar-nav">
                                 <a class="nav-link tag-reload" href="{{site.baseurl}}/tags#{{ tagName }}" onclick="tagClick('{{ tagName }}');">#{{ tagName }} <sup>{{ tagSize }}</sup></a>
                             </li>
+                            {% endif %}
                         {% endfor %}
                             <li class="navbar-nav">
                                 <a class="nav-link" href="{{ site.baseurl }}/years"><b>Years</b></a>

@@ -14,8 +14,8 @@ Simple to cook, economic ingredients, and very tasty. An ideal winter camp meal
 
 ## Ingredients
 
-* 2 kg beef roast, usually rolled, slow cook
-* 1.5 kg potatoes
+* 2 Kg beef roast, usually rolled, slow cook
+* 1.5 Kg potatoes
 * 6 onions
 * 1 l water
 * 750 g carrots

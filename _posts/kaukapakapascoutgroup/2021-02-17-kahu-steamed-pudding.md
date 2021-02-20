@@ -14,12 +14,12 @@ A classic hot pudding, and a new cooking technique to learn
 
 ## Ingredients
 
-* 1/2 cup jam
-* 1 1/2 cups plain flour
+* ½ cup jam
+* 1½ cups plain flour
 * 1 teaspoon baking powder
 * 60 g butter
-* 1/2 cup castor sugar
-* 1/2 cup milk
+* ½ cup castor sugar
+* ½ cup milk
 * 1 egg
 
 ## Method

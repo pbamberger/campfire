@@ -47,7 +47,7 @@ Mix by hand, do not over mix
 * 1 can crushed tomatoes
 * 1/3 cup finely minced onion
 * 1 clove minced garlic
-* 1/2 cup stock
+* ½ cup stock
 * Salt and pepper to taste
 
 Simmer for 60 minutes to make a fragrant to sauce

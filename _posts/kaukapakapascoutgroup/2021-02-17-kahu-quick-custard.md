@@ -17,7 +17,7 @@ Serve hot on fruit cake, or with icecream
 * 1 l milk 
 * 2 tablespoons sugar
 * 4 raised tablespoons custard powder
-* 200 ms water
+* 200 ml water
 
 ## Method
 

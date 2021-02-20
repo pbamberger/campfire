@@ -5,6 +5,9 @@ permalink: /maps
 ---
 
 <div id="map" style="width: 100%; height: 800px"></div>
+
+_Not on the map? [Raise an issue please](https://github.com/Kaukapakapa-Scout-Group/campfire/issues/), download [KML](/maps-kml/)_
+
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/leaflet.css" />
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script>
