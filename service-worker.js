@@ -109,9 +109,13 @@ self.addEventListener(
         e.respondWith(
             caches.match(e.request)
                 .then(function (response) {
+                    {% if jekyll.environment != 'development' %}
                     if (response) {
                         return response;
                     }
+                    {% else %}
+                    // Development mode, cache disabled
+                    {% endif %}
                     return fetch(e.request)
                     // .then((response) => {
                     //     //if in patterns to cache

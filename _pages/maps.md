@@ -4,10 +4,8 @@ title: Maps
 permalink: /maps
 ---
 
-<div id="map" style="width: 100%; height: 800px"></div>
-
+<div id="map" style="width: 100%; max-height: 90%; height: 800px;"></div>
 _Not on the map? [Raise an issue please](https://github.com/Kaukapakapa-Scout-Group/campfire/issues/), download [KML](/maps-kml/)_
-
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/leaflet.css" />
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script>
@@ -17,7 +15,6 @@ var mapOptions = {
     zoom: 6
 }
 var map = new L.map('map', mapOptions);
-
 {% for author in site.data.authors %}
 {% if author[1].lng and author[1].lat %}
 {% assign posts = site.posts | where: "author", author[0] %}
@@ -33,16 +30,21 @@ marker.bindPopup(`
 <div>
 <h4>{{ author[1].name }}</h4>
 <p>{{ author[1].address1 }} {{ author[1].address2 }} {{ author[1].city }}</p>
-{% for post in posts %}
+<div style="columns: 80px 2";>
+{% for post in posts limit: 36 %}
 <div>
 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{% if post.featured == true %} *{% endif %}</a>
 </div>
 {% endfor %}
 </div>
+</div>
+<br />
+{% if posts.size > 36 %}
+<div style="text-align: right;"><a href="/authors#{{ author[1].id }}">more posts ...</a></div>
+{% endif %}
 `);
 {% endif %}
 {% endfor %}
-
 var layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 map.addLayer(layer);
 </script>
