@@ -32,4 +32,4 @@ kramdown:
     block:
       line_numbers: true
 
-exclude: [ docker-compose.yml, Gemfile, Gemfile.lock, licenses/*, _pages/tag.md]
+exclude: [ docker-compose.yml, Gemfile, Gemfile.lock, licenses/*]

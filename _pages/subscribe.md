@@ -16,11 +16,14 @@ _These fields are all optional_
 
 <button onclick="subscribeUser();">subscribe to site updates</button>
 
+{% if jekyll.environment != 'development' %}
 <br />
 
 <button onclick="enablePush();">Enable Push Notifications</button>
 
 <button onclick="showNotification('Test Notification', 'This is a test!');">Test Message</button>
+
+{% endif %}
 
 <script>
     function enablePush() {

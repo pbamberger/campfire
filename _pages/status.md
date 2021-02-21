@@ -5,7 +5,7 @@ permalink: /status
 cache: always
 ---
 
-Title: {{ page.title }} 
+Title: {{ page.title }}
 
 Site Name: {{site.name}}
 
@@ -15,7 +15,9 @@ Site Description: {{site.description}}
 
 Categories: {{site.categories.size}}, Posts: {{site.posts.size}}, Tags: {{site.tags.size}}
 
-PWA Cache name: {{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}
+PWA Cache Name: {{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}
+
+PWA Cache Mode: {{ jekyll.environment }}
 
 Notifications: <span id='notification'>unavailable</span>
 

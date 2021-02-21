@@ -6,7 +6,7 @@ permalink: /docs
 
 ## How to add or edit a page
 
-We use GitHub to store all our pages. GitHub is a “version control system”, it tracks changes to a set of document, and allows them to be publically published when approved
+We use [Github ](https://github.com/Kaukapakapa-Scout-Group/campfire) to store all our pages. GitHub is a “version control system”, it tracks changes to a set of document, and allows them to be publically published when approved
 
 The campfire site on GitHub is called a “repository” or “repo” for short
 
