@@ -8,6 +8,8 @@ permalink: /docs
 
 We use [Github ](https://github.com/Kaukapakapa-Scout-Group/campfire) to store all our pages. GitHub is a “version control system”, it tracks changes to a set of document, and allows them to be publically published when approved
 
+Edit live on https://github.dev/Kaukapakapa-Scout-Group/campfire
+
 The campfire site on GitHub is called a “repository” or “repo” for short
 
 When anyone wants to makes a change to the Campfire site, they start by making a separate section to hold changes, we call this a “branch”. Multiple branches can exist at the same time. Each branch has a name defining why it exists. E.g. “add sausage recipe”
