@@ -2,6 +2,7 @@ description: "All the best burnt offerings from the Scouts of Aotearoa"
 favicon: 'assets/images/logo.webp'
 google_analytics: 'G-JYZGLT3LQ9'
 include: ["_pages"]
+
 logo: 'assets/images/logo.webp'
 name: "Campfire"
 permalink: /:title/
