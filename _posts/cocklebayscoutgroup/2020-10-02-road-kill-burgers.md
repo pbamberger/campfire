@@ -71,3 +71,5 @@ Drain a can of chickpeas, bag up 2 tbsp and label container "Rabbit’s Testicle
 Mix together breadcrumbs, a pinch of salt, and a couple of dashes of tomato sauce. Label container "Butcher Shop Floor Sawdust"
 
 Cook and serve as per the instructions on the Scouts recipe sheet
+
+Have fun
